@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "0d11e702-3a27-4b47-9d75-07982b57e8f2",
+		"_postman_id": "9278a362-50a8-40ec-b669-dfdccf89fd19",
 		"name": "iMIS SDK",
 		"description": "Collection of REST calls to perform the different operations on the iMIS SDK Site.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -4920,6 +4920,487 @@
 					"_postman_isSubFolder": true
 				},
 				{
+					"name": "User-Defined Tables",
+					"description": "REST CRUD operations on User-Defined Tables in iMIS\n\nAction\t\tHTML Verb\n----------------------\nCreate\t\tPOST\nRead\t\tGET\nUpdate\t\tPUT\nDestroy\t\tDELETE\n",
+					"item": [
+						{
+							"name": "SingleInstanceUser-DefinedTable",
+							"description": null,
+							"item": [
+								{
+									"name": "Returns a list of rows from table",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{Authorization}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "{{Content-Type}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://{{URL}}/api/Name_Demo",
+											"protocol": "http",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"Name_Demo"
+											]
+										},
+										"description": "Using Demo database User-Defined table named Name_Demo"
+									},
+									"response": []
+								},
+								{
+									"name": "Returns a list of rows from table by ID",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{Authorization}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "{{Content-Type}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://{{URL}}/api/Name_Demo/:PartyId",
+											"protocol": "http",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"Name_Demo",
+												":PartyId"
+											],
+											"variable": [
+												{
+													"key": "PartyId",
+													"value": "23178"
+												}
+											]
+										},
+										"description": "Using Demo database User-Defined table named Name_Demo, query by ID"
+									},
+									"response": []
+								},
+								{
+									"name": "Creates an entry",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{Authorization}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "{{Content-Type}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{  \r\n   \"$type\":\"Asi.Soa.Core.DataContracts.GenericEntityData, Asi.Contracts\",\r\n   \"EntityTypeName\":\"Name_Demo\",\r\n   \"PrimaryParentEntityTypeName\":\"Party\",\r\n   \"Identity\":{  \r\n      \"$type\":\"Asi.Soa.Core.DataContracts.IdentityData, Asi.Contracts\",\r\n      \"EntityTypeName\":\"Name_Demo\",\r\n      \"IdentityElements\":{  \r\n         \"$type\":\"System.Collections.ObjectModel.Collection`1[[System.String, mscorlib]], mscorlib\",\r\n         \"$values\":[  \r\n            \"23179\"\r\n         ]\r\n      }\r\n   },\r\n   \"PrimaryParentIdentity\":{  \r\n      \"$type\":\"Asi.Soa.Core.DataContracts.IdentityData, Asi.Contracts\",\r\n      \"EntityTypeName\":\"Party\",\r\n      \"IdentityElements\":{  \r\n         \"$type\":\"System.Collections.ObjectModel.Collection`1[[System.String, mscorlib]], mscorlib\",\r\n         \"$values\":[  \r\n            \"23179\"\r\n         ]\r\n      }\r\n   },\r\n   \"Properties\":{  \r\n      \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyDataCollection, Asi.Contracts\",\r\n      \"$values\":[  \r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Activity_Fee\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Decimal\",\r\n               \"$value\":10\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Advertiser\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Boolean\",\r\n               \"$value\":false\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Board\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Boolean\",\r\n               \"$value\":false\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Date_Certified\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Exhibitor\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Boolean\",\r\n               \"$value\":false\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"PartyId\",\r\n            \"Value\":\"23179\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Interest_Codes\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Key_Contact\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Boolean\",\r\n               \"$value\":false\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Legislative\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Boolean\",\r\n               \"$value\":false\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"List_Codes\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Mobile_Phone\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Newsletter\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Boolean\",\r\n               \"$value\":false\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"School_Attended\",\r\n            \"Value\":\"Concordia University\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Sponsor\",\r\n            \"Value\":\"Bob Binette\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Spouse\",\r\n            \"Value\":\"Louisa\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"System_Type\"\r\n         }\r\n      ]\r\n   }\r\n}"
+										},
+										"url": {
+											"raw": "https://{{URL}}/api/Name_Demo",
+											"protocol": "https",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"Name_Demo"
+											]
+										},
+										"description": "Creates an instance of Name_Demo (note: seems that this in not necessary because Party creation seems to trigger creation of row in name_demo automatically.  Means just need to do an update)\n\nPK must be unique so if not, must first create a new Party, get the new ID and change the BODY to match ID from Party"
+									},
+									"response": []
+								},
+								{
+									"name": "Updates an entry by ID",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{Authorization}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{  \r\n   \"$type\":\"Asi.Soa.Core.DataContracts.GenericEntityData, Asi.Contracts\",\r\n   \"EntityTypeName\":\"Name_Demo\",\r\n   \"PrimaryParentEntityTypeName\":\"Party\",\r\n   \"Identity\":{  \r\n      \"$type\":\"Asi.Soa.Core.DataContracts.IdentityData, Asi.Contracts\",\r\n      \"EntityTypeName\":\"Name_Demo\",\r\n      \"IdentityElements\":{  \r\n         \"$type\":\"System.Collections.ObjectModel.Collection`1[[System.String, mscorlib]], mscorlib\",\r\n         \"$values\":[  \r\n            \"23179\"\r\n         ]\r\n      }\r\n   },\r\n   \"PrimaryParentIdentity\":{  \r\n      \"$type\":\"Asi.Soa.Core.DataContracts.IdentityData, Asi.Contracts\",\r\n      \"EntityTypeName\":\"Party\",\r\n      \"IdentityElements\":{  \r\n         \"$type\":\"System.Collections.ObjectModel.Collection`1[[System.String, mscorlib]], mscorlib\",\r\n         \"$values\":[  \r\n            \"23179\"\r\n         ]\r\n      }\r\n   },\r\n   \"Properties\":{  \r\n      \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyDataCollection, Asi.Contracts\",\r\n      \"$values\":[  \r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Activity_Fee\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Decimal\",\r\n               \"$value\":10\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Advertiser\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Boolean\",\r\n               \"$value\":false\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Board\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Boolean\",\r\n               \"$value\":false\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Date_Certified\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Exhibitor\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Boolean\",\r\n               \"$value\":false\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"PartyId\",\r\n            \"Value\":\"23179\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Interest_Codes\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Key_Contact\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Boolean\",\r\n               \"$value\":false\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Legislative\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Boolean\",\r\n               \"$value\":false\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"List_Codes\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Mobile_Phone\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Newsletter\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Boolean\",\r\n               \"$value\":false\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"School_Attended\",\r\n            \"Value\":\"Concordia University\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Sponsor\",\r\n            \"Value\":\"Bob Binette\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"Spouse\",\r\n            \"Value\":\"Louisa\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"System_Type\"\r\n         }\r\n      ]\r\n   }\r\n}"
+										},
+										"url": {
+											"raw": "https://{{URL}}/api/name_demo/:PartyId",
+											"protocol": "https",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"name_demo",
+												":PartyId"
+											],
+											"variable": [
+												{
+													"key": "PartyId",
+													"value": "18012"
+												}
+											]
+										},
+										"description": "Updates an instance of Party by id"
+									},
+									"response": []
+								},
+								{
+									"name": "Delete record by ID Copy",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{Authorization}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "{{Content-Type}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://{{URL}}/api/name_demo/:PartyId",
+											"protocol": "https",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"name_demo",
+												":PartyId"
+											],
+											"variable": [
+												{
+													"key": "PartyId",
+													"value": "23179"
+												}
+											]
+										},
+										"description": "Delete a single record from a data contract"
+									},
+									"response": []
+								}
+							],
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "7ab60e07-51d9-4155-a764-8b11c4a55368",
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "644ad177-2622-41d3-af49-5050f9e38985",
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Multi-InstanceUser-DefinedTable",
+							"description": null,
+							"item": [
+								{
+									"name": "Returns a list of rows from table",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{Authorization}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "{{Content-Type}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://{{URL}}/api/Name_CEU",
+											"protocol": "http",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"Name_CEU"
+											]
+										},
+										"description": "Using Demo database User-Defined table named Name_CEU"
+									},
+									"response": []
+								},
+								{
+									"name": "Returns a list of rows from table by ID",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{Authorization}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "{{Content-Type}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://{{URL}}/api/Name_CEU/:Party",
+											"protocol": "http",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"Name_CEU",
+												":Party"
+											],
+											"variable": [
+												{
+													"key": "Party",
+													"value": ""
+												}
+											]
+										},
+										"description": "Using Demo database User-Defined table named Name_CEU, query by ID"
+									},
+									"response": []
+								},
+								{
+									"name": "Returns a list of rows from table by ID single row",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{Authorization}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "{{Content-Type}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://{{URL}}/api/Name_CEU/~18043|1",
+											"protocol": "http",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"Name_CEU",
+												"~18043|1"
+											]
+										},
+										"description": "To just a specific row from the multi-instance table you need to pass both the ID and the SEQN for the row that you want."
+									},
+									"response": []
+								},
+								{
+									"name": "Creates an entry",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{Authorization}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "{{Content-Type}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{  \r\n   \"$type\":\"Asi.Soa.Core.DataContracts.GenericEntityData, Asi.Contracts\",\r\n   \"EntityTypeName\":\"Name_CEU\",\r\n   \"PrimaryParentEntityTypeName\":\"Party\",\r\n   \"Identity\":{  \r\n      \"$type\":\"Asi.Soa.Core.DataContracts.IdentityData, Asi.Contracts\",\r\n      \"EntityTypeName\":\"Name_CEU\",\r\n      \"IdentityElements\":{  \r\n         \"$type\":\"System.Collections.ObjectModel.Collection`1[[System.String, mscorlib]], mscorlib\",\r\n         \"$values\":[  \r\n            \"23179\",\r\n            \"2\"\r\n         ]\r\n      }\r\n   },\r\n   \"PrimaryParentIdentity\":{  \r\n      \"$type\":\"Asi.Soa.Core.DataContracts.IdentityData, Asi.Contracts\",\r\n      \"EntityTypeName\":\"Party\",\r\n      \"IdentityElements\":{  \r\n         \"$type\":\"System.Collections.ObjectModel.Collection`1[[System.String, mscorlib]], mscorlib\",\r\n         \"$values\":[  \r\n            \"23179\"\r\n         ]\r\n      }\r\n   },\r\n   \"Properties\":{  \r\n      \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyDataCollection, Asi.Contracts\",\r\n      \"$values\":[  \r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Course\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Date_Reported\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Event\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Followup\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Hours\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Double\",\r\n               \"$value\":10\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Notes\",\r\n            \"Value\":\"These are some notes on the subject!\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Source\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Type\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Year\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"PartyId\",\r\n            \"Value\":\"23179\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"SEQN\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Int32\",\r\n               \"$value\":2\r\n            }\r\n         }\r\n      ]\r\n   }\r\n}"
+										},
+										"url": {
+											"raw": "https://{{URL}}/api/Name_CEU",
+											"protocol": "https",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"Name_CEU"
+											]
+										},
+										"description": "Creates an instance of Name_Demo (note: seems that this in not necessary because Party creation seems to trigger creation of row in name_demo automatically.  Means just need to do an update)\n\nPK must be unique so if not, must first create a new Party, get the new ID and change the BODY to match ID from Party"
+									},
+									"response": []
+								},
+								{
+									"name": "Updates an entry by ID",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{Authorization}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "{{Content-Type}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{  \r\n   \"$type\":\"Asi.Soa.Core.DataContracts.GenericEntityData, Asi.Contracts\",\r\n   \"EntityTypeName\":\"Name_CEU\",\r\n   \"PrimaryParentEntityTypeName\":\"Party\",\r\n   \"Identity\":{  \r\n      \"$type\":\"Asi.Soa.Core.DataContracts.IdentityData, Asi.Contracts\",\r\n      \"EntityTypeName\":\"Name_CEU\",\r\n      \"IdentityElements\":{  \r\n         \"$type\":\"System.Collections.ObjectModel.Collection`1[[System.String, mscorlib]], mscorlib\",\r\n         \"$values\":[  \r\n            \"23179\",\r\n            \"2\"\r\n         ]\r\n      }\r\n   },\r\n   \"PrimaryParentIdentity\":{  \r\n      \"$type\":\"Asi.Soa.Core.DataContracts.IdentityData, Asi.Contracts\",\r\n      \"EntityTypeName\":\"Party\",\r\n      \"IdentityElements\":{  \r\n         \"$type\":\"System.Collections.ObjectModel.Collection`1[[System.String, mscorlib]], mscorlib\",\r\n         \"$values\":[  \r\n            \"23179\"\r\n         ]\r\n      }\r\n   },\r\n   \"Properties\":{  \r\n      \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyDataCollection, Asi.Contracts\",\r\n      \"$values\":[  \r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Course\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Date_Reported\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Event\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Followup\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Hours\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Double\",\r\n               \"$value\":20\r\n            }\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Notes\",\r\n            \"Value\":\"These notes have been changed!\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Source\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Type\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"CEU_Year\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"PartyId\",\r\n            \"Value\":\"23179\"\r\n         },\r\n         {  \r\n            \"$type\":\"Asi.Soa.Core.DataContracts.GenericPropertyData, Asi.Contracts\",\r\n            \"Name\":\"SEQN\",\r\n            \"Value\":{  \r\n               \"$type\":\"System.Int32\",\r\n               \"$value\":2\r\n            }\r\n         }\r\n      ]\r\n   }\r\n}"
+										},
+										"url": {
+											"raw": "https://{{URL}}/api/Name_CEU/~23179|2",
+											"protocol": "https",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"Name_CEU",
+												"~23179|2"
+											]
+										},
+										"description": "Updates an instance of Party by id"
+									},
+									"response": []
+								},
+								{
+									"name": "Delete record by ID",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "{{Authorization}}"
+											},
+											{
+												"key": "Content-Type",
+												"value": "{{Content-Type}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://{{URL}}/api/Name_CEU/~23179|2",
+											"protocol": "https",
+											"host": [
+												"{{URL}}"
+											],
+											"path": [
+												"api",
+												"Name_CEU",
+												"~23179|2"
+											]
+										},
+										"description": "Delete a single record from a data contract"
+									},
+									"response": []
+								}
+							],
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "01e849d4-9396-449e-a1ba-e32542df517f",
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "cf8f89d7-8e5a-47fa-9ebd-3ba648487e84",
+										"type": "text/javascript",
+										"exec": [
+											""
+										]
+									}
+								}
+							],
+							"_postman_isSubFolder": true
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c71d4d31-d2f8-4b2a-a979-0e86361231bd",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "6dfbb40c-67da-4596-a85e-587634a238e2",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
 					"name": "Find party using filter",
 					"request": {
 						"method": "GET",
@@ -5002,7 +5483,7 @@
 					},
 					"response": [
 						{
-							"id": "61a11b08-43b6-4d3b-ac39-2e355f4d8fce",
+							"id": "8454d673-b43e-4b72-ae20-a8d2cec5e63f",
 							"name": "DataContract Single Country",
 							"originalRequest": {
 								"method": "GET",
