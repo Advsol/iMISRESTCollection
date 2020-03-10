@@ -1,0 +1,2526 @@
+{
+	"info": {
+		"_postman_id": "be781bf0-752a-4fcf-96ad-533521a68e14",
+		"name": "Fundraising",
+		"description": "iMIS Fundraising API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DonationPremium",
+			"item": [
+				{
+					"name": "Returns a list of DonationPremium",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DonationPremium?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DonationPremium"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of DonationPremium"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a DonationPremium",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DonationPremium",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DonationPremium"
+							]
+						},
+						"description": "Creates an instance of DonationPremium"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a DonationPremium entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DonationPremium/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DonationPremium",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of DonationPremium"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a DonationPremium",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DonationPremium/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DonationPremium",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of DonationPremium"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a DonationPremium by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DonationPremium/:DonationPremiumId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DonationPremium",
+								":DonationPremiumId"
+							],
+							"variable": [
+								{
+									"key": "DonationPremiumId",
+									"value": "{{DonationPremiumId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of DonationPremium by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a DonationPremium by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DonationPremium/:DonationPremiumId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DonationPremium",
+								":DonationPremiumId"
+							],
+							"variable": [
+								{
+									"key": "DonationPremiumId",
+									"value": "{{DonationPremiumId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of DonationPremium by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a DonationPremium by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DonationPremium/:DonationPremiumId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DonationPremium",
+								":DonationPremiumId"
+							],
+							"variable": [
+								{
+									"key": "DonationPremiumId",
+									"value": "{{DonationPremiumId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of DonationPremium by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a DonationPremium for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DonationPremium/:DonationPremiumId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DonationPremium",
+								":DonationPremiumId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "DonationPremiumId",
+									"value": "{{DonationPremiumId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of DonationPremium for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for DonationPremium",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/DonationPremium",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"DonationPremium"
+							]
+						},
+						"description": "Returns metadata information that describes a DonationPremium object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for DonationPremium"
+		},
+		{
+			"name": "GiftAidClaim",
+			"item": [
+				{
+					"name": "Returns a list of GiftAidClaim",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftAidClaim?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftAidClaim"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of GiftAidClaim"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes a GiftAidClaim operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftAidClaim/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftAidClaim",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of GiftAidClaim"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a GiftAidClaim entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftAidClaim/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftAidClaim",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of GiftAidClaim"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a GiftAidClaim for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftAidClaim/:GiftAidClaimId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftAidClaim",
+								":GiftAidClaimId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "GiftAidClaimId",
+									"value": "{{GiftAidClaimId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of GiftAidClaim for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for GiftAidClaim",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/GiftAidClaim",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"GiftAidClaim"
+							]
+						},
+						"description": "Returns metadata information that describes a GiftAidClaim object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for GiftAidClaim"
+		},
+		{
+			"name": "GiftAidClaimDetail",
+			"item": [
+				{
+					"name": "Returns a list of GiftAidClaimDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftAidClaimDetail?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftAidClaimDetail"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of GiftAidClaimDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a GiftAidClaimDetail entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftAidClaimDetail/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftAidClaimDetail",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of GiftAidClaimDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a GiftAidClaimDetail by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftAidClaimDetail/:GiftAidClaimDetailId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftAidClaimDetail",
+								":GiftAidClaimDetailId"
+							],
+							"variable": [
+								{
+									"key": "GiftAidClaimDetailId",
+									"value": "{{GiftAidClaimDetailId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of GiftAidClaimDetail by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a GiftAidClaimDetail for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftAidClaimDetail/:GiftAidClaimDetailId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftAidClaimDetail",
+								":GiftAidClaimDetailId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "GiftAidClaimDetailId",
+									"value": "{{GiftAidClaimDetailId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of GiftAidClaimDetail for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for GiftAidClaimDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/GiftAidClaimDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"GiftAidClaimDetail"
+							]
+						},
+						"description": "Returns metadata information that describes a GiftAidClaimDetail object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for GiftAidClaimDetail"
+		},
+		{
+			"name": "GiftInformationBatch",
+			"item": [
+				{
+					"name": "Returns a list of GiftInformationBatch",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftInformationBatch?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftInformationBatch"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of GiftInformationBatch"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a GiftInformationBatch",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftInformationBatch",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftInformationBatch"
+							]
+						},
+						"description": "Creates an instance of GiftInformationBatch"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes a GiftInformationBatch operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftInformationBatch/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftInformationBatch",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of GiftInformationBatch"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a GiftInformationBatch entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftInformationBatch/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftInformationBatch",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of GiftInformationBatch"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a GiftInformationBatch",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftInformationBatch/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftInformationBatch",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of GiftInformationBatch"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a GiftInformationBatch by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftInformationBatch/:GiftInformationBatchId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftInformationBatch",
+								":GiftInformationBatchId"
+							],
+							"variable": [
+								{
+									"key": "GiftInformationBatchId",
+									"value": "{{GiftInformationBatchId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of GiftInformationBatch by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a GiftInformationBatch by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftInformationBatch/:GiftInformationBatchId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftInformationBatch",
+								":GiftInformationBatchId"
+							],
+							"variable": [
+								{
+									"key": "GiftInformationBatchId",
+									"value": "{{GiftInformationBatchId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of GiftInformationBatch by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a GiftInformationBatch by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftInformationBatch/:GiftInformationBatchId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftInformationBatch",
+								":GiftInformationBatchId"
+							],
+							"variable": [
+								{
+									"key": "GiftInformationBatchId",
+									"value": "{{GiftInformationBatchId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of GiftInformationBatch by id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for GiftInformationBatch"
+		},
+		{
+			"name": "GiftItem",
+			"item": [
+				{
+					"name": "Returns a list of GiftItem",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftItem?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftItem"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of GiftItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a GiftItem",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftItem",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftItem"
+							]
+						},
+						"description": "Creates an instance of GiftItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a GiftItem entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftItem/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftItem",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of GiftItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a GiftItem",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftItem/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftItem",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of GiftItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a GiftItem by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftItem/:GiftItemId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftItem",
+								":GiftItemId"
+							],
+							"variable": [
+								{
+									"key": "GiftItemId",
+									"value": "{{GiftItemId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of GiftItem by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a GiftItem by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftItem/:GiftItemId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftItem",
+								":GiftItemId"
+							],
+							"variable": [
+								{
+									"key": "GiftItemId",
+									"value": "{{GiftItemId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of GiftItem by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a GiftItem for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftItem/:GiftItemId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftItem",
+								":GiftItemId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "GiftItemId",
+									"value": "{{GiftItemId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of GiftItem for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for GiftItem",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/GiftItem",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"GiftItem"
+							]
+						},
+						"description": "Returns metadata information that describes a GiftItem object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for GiftItem"
+		},
+		{
+			"name": "GiftPremiumRule",
+			"item": [
+				{
+					"name": "Returns a list of GiftPremiumRule",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremiumRule?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremiumRule"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of GiftPremiumRule"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes a GiftPremiumRule operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremiumRule/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremiumRule",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of GiftPremiumRule"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a GiftPremiumRule entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremiumRule/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremiumRule",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of GiftPremiumRule"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a GiftPremiumRule",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremiumRule/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremiumRule",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of GiftPremiumRule"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a GiftPremiumRule by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremiumRule/:GiftPremiumRuleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremiumRule",
+								":GiftPremiumRuleId"
+							],
+							"variable": [
+								{
+									"key": "GiftPremiumRuleId",
+									"value": "{{GiftPremiumRuleId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of GiftPremiumRule by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a GiftPremiumRule by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremiumRule/:GiftPremiumRuleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremiumRule",
+								":GiftPremiumRuleId"
+							],
+							"variable": [
+								{
+									"key": "GiftPremiumRuleId",
+									"value": "{{GiftPremiumRuleId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of GiftPremiumRule by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a GiftPremiumRule by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremiumRule/:GiftPremiumRuleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremiumRule",
+								":GiftPremiumRuleId"
+							],
+							"variable": [
+								{
+									"key": "GiftPremiumRuleId",
+									"value": "{{GiftPremiumRuleId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of GiftPremiumRule by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a GiftPremiumRule for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremiumRule/:GiftPremiumRuleId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremiumRule",
+								":GiftPremiumRuleId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "GiftPremiumRuleId",
+									"value": "{{GiftPremiumRuleId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of GiftPremiumRule for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for GiftPremiumRule",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/GiftPremiumRule",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"GiftPremiumRule"
+							]
+						},
+						"description": "Returns metadata information that describes a GiftPremiumRule object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for GiftPremiumRule"
+		},
+		{
+			"name": "GiftPremiumSet",
+			"item": [
+				{
+					"name": "Returns a list of GiftPremiumSet",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremiumSet?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremiumSet"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of GiftPremiumSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a GiftPremiumSet entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremiumSet/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremiumSet",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of GiftPremiumSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a GiftPremiumSet for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremiumSet/:GiftPremiumSetId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremiumSet",
+								":GiftPremiumSetId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "GiftPremiumSetId",
+									"value": "{{GiftPremiumSetId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of GiftPremiumSet for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for GiftPremiumSet",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/GiftPremiumSet",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"GiftPremiumSet"
+							]
+						},
+						"description": "Returns metadata information that describes a GiftPremiumSet object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for GiftPremiumSet"
+		},
+		{
+			"name": "TributeType",
+			"item": [
+				{
+					"name": "Returns a list of TributeType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TributeType?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TributeType"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of TributeType"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a TributeType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TributeType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TributeType"
+							]
+						},
+						"description": "Creates an instance of TributeType"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a TributeType entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TributeType/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TributeType",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of TributeType"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a TributeType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TributeType/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TributeType",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of TributeType"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a TributeType by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TributeType/:TributeTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TributeType",
+								":TributeTypeId"
+							],
+							"variable": [
+								{
+									"key": "TributeTypeId",
+									"value": "{{TributeTypeId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of TributeType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a TributeType by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TributeType/:TributeTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TributeType",
+								":TributeTypeId"
+							],
+							"variable": [
+								{
+									"key": "TributeTypeId",
+									"value": "{{TributeTypeId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of TributeType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a TributeType by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TributeType/:TributeTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TributeType",
+								":TributeTypeId"
+							],
+							"variable": [
+								{
+									"key": "TributeTypeId",
+									"value": "{{TributeTypeId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of TributeType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a TributeType for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TributeType/:TributeTypeId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TributeType",
+								":TributeTypeId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "TributeTypeId",
+									"value": "{{TributeTypeId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of TributeType for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for TributeType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/TributeType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"TributeType"
+							]
+						},
+						"description": "Returns metadata information that describes a TributeType object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for TributeType"
+		}
+	]
+}

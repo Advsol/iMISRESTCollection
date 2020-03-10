@@ -1,0 +1,4001 @@
+{
+	"info": {
+		"_postman_id": "cc6d8178-7270-4559-b696-d6d0d9efba80",
+		"name": "Item",
+		"description": "iMIS Item API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GiftPremium",
+			"item": [
+				{
+					"name": "Executes a GiftPremium operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremium/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremium",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of GiftPremium"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a GiftPremium entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremium/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremium",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of GiftPremium"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a GiftPremium",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremium/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremium",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of GiftPremium"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a GiftPremium for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GiftPremium/:GiftPremiumId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GiftPremium",
+								":GiftPremiumId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "GiftPremiumId",
+									"value": "{{GiftPremiumId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of GiftPremium for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for GiftPremium",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/GiftPremium",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"GiftPremium"
+							]
+						},
+						"description": "Returns metadata information that describes a GiftPremium object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for GiftPremium"
+		},
+		{
+			"name": "Item",
+			"item": [
+				{
+					"name": "Returns a list of Item",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Item",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Item"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of Item"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an Item entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Item/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Item",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of Item"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an Item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Item/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Item",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of Item"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an Item by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Item/:ItemId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Item",
+								":ItemId"
+							],
+							"variable": [
+								{
+									"key": "ItemId",
+									"value": "{{ItemId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of Item by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates an Item by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Item/:ItemId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Item",
+								":ItemId"
+							],
+							"variable": [
+								{
+									"key": "ItemId",
+									"value": "{{ItemId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of Item by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an Item for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Item/:ItemId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Item",
+								":ItemId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ItemId",
+									"value": "{{ItemId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of Item for the specified id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for Item"
+		},
+		{
+			"name": "ItemClass",
+			"item": [
+				{
+					"name": "Returns a list of ItemClass",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ItemClass",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemClass"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ItemClass"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an ItemClass entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ItemClass/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemClass",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ItemClass"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an ItemClass",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ItemClass/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemClass",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ItemClass"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an ItemClass by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ItemClass/:ItemClassId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemClass",
+								":ItemClassId"
+							],
+							"variable": [
+								{
+									"key": "ItemClassId",
+									"value": "{{ItemClassId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of ItemClass by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an ItemClass for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ItemClass/:ItemClassId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemClass",
+								":ItemClassId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ItemClassId",
+									"value": "{{ItemClassId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ItemClass for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ItemClass",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ItemClass",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ItemClass"
+							]
+						},
+						"description": "Returns metadata information that describes an ItemClass object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ItemClass"
+		},
+		{
+			"name": "ItemClassSummary",
+			"item": [
+				{
+					"name": "Returns a list of ItemClassSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ItemClassSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemClassSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ItemClassSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an ItemClassSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ItemClassSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemClassSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ItemClassSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an ItemClassSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ItemClassSummary/:ItemClassSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemClassSummary",
+								":ItemClassSummaryId"
+							],
+							"variable": [
+								{
+									"key": "ItemClassSummaryId",
+									"value": "{{ItemClassSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of ItemClassSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ItemClassSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ItemClassSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ItemClassSummary"
+							]
+						},
+						"description": "Returns metadata information that describes an ItemClassSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ItemClassSummary"
+		},
+		{
+			"name": "ItemPrice",
+			"item": [
+				{
+					"name": "Checks permissions for an ItemPrice entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ItemPrice/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemPrice",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ItemPrice"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an ItemPrice for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ItemPrice/:ItemPriceId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemPrice",
+								":ItemPriceId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ItemPriceId",
+									"value": "{{ItemPriceId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ItemPrice for the specified id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ItemPrice"
+		},
+		{
+			"name": "ItemSetItem",
+			"item": [
+				{
+					"name": "Checks permissions for an ItemSetItem entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ItemSetItem/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemSetItem",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ItemSetItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an ItemSetItem for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ItemSetItem/:ItemSetItemId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemSetItem",
+								":ItemSetItemId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ItemSetItemId",
+									"value": "{{ItemSetItemId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ItemSetItem for the specified id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ItemSetItem"
+		},
+		{
+			"name": "ItemSummary",
+			"item": [
+				{
+					"name": "Returns a list of ItemSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ItemSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ItemSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an ItemSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ItemSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ItemSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an ItemSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ItemSummary/:ItemSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemSummary",
+								":ItemSummaryId"
+							],
+							"variable": [
+								{
+									"key": "ItemSummaryId",
+									"value": "{{ItemSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of ItemSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ItemSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ItemSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ItemSummary"
+							]
+						},
+						"description": "Returns metadata information that describes an ItemSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ItemSummary"
+		},
+		{
+			"name": "LegacyBillingCycle",
+			"item": [
+				{
+					"name": "Returns a list of LegacyBillingCycle",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingCycle",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingCycle"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyBillingCycle"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LegacyBillingCycle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingCycle",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingCycle"
+							]
+						},
+						"description": "Creates an instance of LegacyBillingCycle"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyBillingCycle entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingCycle/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingCycle",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyBillingCycle"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LegacyBillingCycle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingCycle/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingCycle",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LegacyBillingCycle"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LegacyBillingCycle by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingCycle/:LegacyBillingCycleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingCycle",
+								":LegacyBillingCycleId"
+							],
+							"variable": [
+								{
+									"key": "LegacyBillingCycleId",
+									"value": "{{LegacyBillingCycleId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LegacyBillingCycle by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyBillingCycle by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingCycle/:LegacyBillingCycleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingCycle",
+								":LegacyBillingCycleId"
+							],
+							"variable": [
+								{
+									"key": "LegacyBillingCycleId",
+									"value": "{{LegacyBillingCycleId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyBillingCycle by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LegacyBillingCycle by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingCycle/:LegacyBillingCycleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingCycle",
+								":LegacyBillingCycleId"
+							],
+							"variable": [
+								{
+									"key": "LegacyBillingCycleId",
+									"value": "{{LegacyBillingCycleId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LegacyBillingCycle by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyBillingCycle for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingCycle/:LegacyBillingCycleId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingCycle",
+								":LegacyBillingCycleId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyBillingCycleId",
+									"value": "{{LegacyBillingCycleId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyBillingCycle for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyBillingCycle",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyBillingCycle",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyBillingCycle"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyBillingCycle object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyBillingCycle"
+		},
+		{
+			"name": "LegacyBillingItem",
+			"item": [
+				{
+					"name": "Returns a list of LegacyBillingItem",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingItem",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingItem"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyBillingItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LegacyBillingItem",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingItem",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingItem"
+							]
+						},
+						"description": "Creates an instance of LegacyBillingItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyBillingItem entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingItem/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingItem",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyBillingItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LegacyBillingItem",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingItem/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingItem",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LegacyBillingItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LegacyBillingItem by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingItem/:LegacyBillingItemId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingItem",
+								":LegacyBillingItemId"
+							],
+							"variable": [
+								{
+									"key": "LegacyBillingItemId",
+									"value": "{{LegacyBillingItemId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LegacyBillingItem by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyBillingItem by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingItem/:LegacyBillingItemId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingItem",
+								":LegacyBillingItemId"
+							],
+							"variable": [
+								{
+									"key": "LegacyBillingItemId",
+									"value": "{{LegacyBillingItemId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyBillingItem by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LegacyBillingItem by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingItem/:LegacyBillingItemId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingItem",
+								":LegacyBillingItemId"
+							],
+							"variable": [
+								{
+									"key": "LegacyBillingItemId",
+									"value": "{{LegacyBillingItemId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LegacyBillingItem by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyBillingItem for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyBillingItem/:LegacyBillingItemId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyBillingItem",
+								":LegacyBillingItemId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyBillingItemId",
+									"value": "{{LegacyBillingItemId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyBillingItem for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyBillingItem",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyBillingItem",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyBillingItem"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyBillingItem object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyBillingItem"
+		},
+		{
+			"name": "LegacyItemClassDetail",
+			"item": [
+				{
+					"name": "Returns a list of LegacyItemClassDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyItemClassDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyItemClassDetail"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyItemClassDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LegacyItemClassDetail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyItemClassDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyItemClassDetail"
+							]
+						},
+						"description": "Creates an instance of LegacyItemClassDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyItemClassDetail entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyItemClassDetail/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyItemClassDetail",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyItemClassDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LegacyItemClassDetail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyItemClassDetail/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyItemClassDetail",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LegacyItemClassDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LegacyItemClassDetail by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyItemClassDetail/:LegacyItemClassDetailId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyItemClassDetail",
+								":LegacyItemClassDetailId"
+							],
+							"variable": [
+								{
+									"key": "LegacyItemClassDetailId",
+									"value": "{{LegacyItemClassDetailId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LegacyItemClassDetail by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyItemClassDetail by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyItemClassDetail/:LegacyItemClassDetailId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyItemClassDetail",
+								":LegacyItemClassDetailId"
+							],
+							"variable": [
+								{
+									"key": "LegacyItemClassDetailId",
+									"value": "{{LegacyItemClassDetailId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyItemClassDetail by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LegacyItemClassDetail by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyItemClassDetail/:LegacyItemClassDetailId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyItemClassDetail",
+								":LegacyItemClassDetailId"
+							],
+							"variable": [
+								{
+									"key": "LegacyItemClassDetailId",
+									"value": "{{LegacyItemClassDetailId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LegacyItemClassDetail by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyItemClassDetail for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyItemClassDetail/:LegacyItemClassDetailId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyItemClassDetail",
+								":LegacyItemClassDetailId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyItemClassDetailId",
+									"value": "{{LegacyItemClassDetailId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyItemClassDetail for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyItemClassDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyItemClassDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyItemClassDetail"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyItemClassDetail object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyItemClassDetail"
+		},
+		{
+			"name": "LegacyProductItem",
+			"item": [
+				{
+					"name": "Checks permissions for a LegacyProductItem entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyProductItem/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyProductItem",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyProductItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyProductItem for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyProductItem/:LegacyProductItemId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyProductItem",
+								":LegacyProductItemId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyProductItemId",
+									"value": "{{LegacyProductItemId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyProductItem for the specified id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyProductItem"
+		},
+		{
+			"name": "PartyItemAvailability",
+			"item": [
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyItemAvailability/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyItemAvailability",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of PartyItemAvailability"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PartyItemAvailability entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyItemAvailability/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyItemAvailability",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PartyItemAvailability"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PartyItemAvailability",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PartyItemAvailability",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PartyItemAvailability"
+							]
+						},
+						"description": "Returns metadata information that describes a PartyItemAvailability object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PartyItemAvailability"
+		},
+		{
+			"name": "PartyItemPrice",
+			"item": [
+				{
+					"name": "Returns a list of PartyItemPrice",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PartyItemPrice",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyItemPrice"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PartyItemPrice"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes a PartyItemPrice operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyItemPrice/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyItemPrice",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of PartyItemPrice"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PartyItemPrice entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyItemPrice/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyItemPrice",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PartyItemPrice"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PartyItemPrice",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyItemPrice/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyItemPrice",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PartyItemPrice"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a PartyItemPrice by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PartyItemPrice/:PartyItemPriceId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyItemPrice",
+								":PartyItemPriceId"
+							],
+							"variable": [
+								{
+									"key": "PartyItemPriceId",
+									"value": "{{PartyItemPriceId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of PartyItemPrice by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PartyItemPrice for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PartyItemPrice/:PartyItemPriceId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyItemPrice",
+								":PartyItemPriceId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PartyItemPriceId",
+									"value": "{{PartyItemPriceId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PartyItemPrice for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PartyItemPrice",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PartyItemPrice",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PartyItemPrice"
+							]
+						},
+						"description": "Returns metadata information that describes a PartyItemPrice object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PartyItemPrice"
+		},
+		{
+			"name": "ProductInventory",
+			"item": [
+				{
+					"name": "Returns a list of ProductInventory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ProductInventory",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductInventory"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ProductInventory"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a ProductInventory entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProductInventory/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductInventory",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ProductInventory"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a ProductInventory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProductInventory/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductInventory",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ProductInventory"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a ProductInventory by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ProductInventory/:ProductInventoryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductInventory",
+								":ProductInventoryId"
+							],
+							"variable": [
+								{
+									"key": "ProductInventoryId",
+									"value": "{{ProductInventoryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of ProductInventory by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a ProductInventory for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ProductInventory/:ProductInventoryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductInventory",
+								":ProductInventoryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ProductInventoryId",
+									"value": "{{ProductInventoryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ProductInventory for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ProductInventory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ProductInventory",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ProductInventory"
+							]
+						},
+						"description": "Returns metadata information that describes a ProductInventory object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ProductInventory"
+		},
+		{
+			"name": "ProductItem",
+			"item": [
+				{
+					"name": "Checks permissions for a ProductItem entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProductItem/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductItem",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ProductItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a ProductItem for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ProductItem/:ProductItemId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductItem",
+								":ProductItemId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ProductItemId",
+									"value": "{{ProductItemId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ProductItem for the specified id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ProductItem"
+		},
+		{
+			"name": "ProductTransaction",
+			"item": [
+				{
+					"name": "Returns a list of ProductTransaction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ProductTransaction",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductTransaction"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ProductTransaction"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a ProductTransaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProductTransaction",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductTransaction"
+							]
+						},
+						"description": "Creates an instance of ProductTransaction"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProductTransaction/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductTransaction",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of ProductTransaction"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a ProductTransaction entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProductTransaction/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductTransaction",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ProductTransaction"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a ProductTransaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProductTransaction/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductTransaction",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ProductTransaction"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a ProductTransaction by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ProductTransaction/:ProductTransactionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductTransaction",
+								":ProductTransactionId"
+							],
+							"variable": [
+								{
+									"key": "ProductTransactionId",
+									"value": "{{ProductTransactionId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of ProductTransaction by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a ProductTransaction by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProductTransaction/:ProductTransactionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductTransaction",
+								":ProductTransactionId"
+							],
+							"variable": [
+								{
+									"key": "ProductTransactionId",
+									"value": "{{ProductTransactionId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of ProductTransaction by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a ProductTransaction for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ProductTransaction/:ProductTransactionId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductTransaction",
+								":ProductTransactionId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ProductTransactionId",
+									"value": "{{ProductTransactionId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ProductTransaction for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ProductTransaction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ProductTransaction",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ProductTransaction"
+							]
+						},
+						"description": "Returns metadata information that describes a ProductTransaction object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ProductTransaction"
+		},
+		{
+			"name": "ProductTransactionDetail",
+			"item": [
+				{
+					"name": "Returns a list of ProductTransactionDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ProductTransactionDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductTransactionDetail"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ProductTransactionDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a ProductTransactionDetail entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProductTransactionDetail/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductTransactionDetail",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ProductTransactionDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a ProductTransactionDetail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProductTransactionDetail/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductTransactionDetail",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ProductTransactionDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a ProductTransactionDetail for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ProductTransactionDetail/:ProductTransactionDetailId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProductTransactionDetail",
+								":ProductTransactionDetailId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ProductTransactionDetailId",
+									"value": "{{ProductTransactionDetailId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ProductTransactionDetail for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ProductTransactionDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ProductTransactionDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ProductTransactionDetail"
+							]
+						},
+						"description": "Returns metadata information that describes a ProductTransactionDetail object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ProductTransactionDetail"
+		}
+	]
+}

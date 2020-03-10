@@ -1,0 +1,3642 @@
+{
+	"info": {
+		"_postman_id": "b0ad58a7-b86d-4d3b-af1e-7792854b8a82",
+		"name": "Events",
+		"description": "iMIS Events API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Event",
+			"item": [
+				{
+					"name": "Returns a list of Event",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Event",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Event"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates an Event",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Event",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Event"
+							]
+						},
+						"description": "Creates an instance of Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes an Event operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Event/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Event",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an Event entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Event/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Event",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an Event",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Event/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Event",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an Event by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Event/:EventId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Event",
+								":EventId"
+							],
+							"variable": [
+								{
+									"key": "EventId",
+									"value": "{{EventId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of Event by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes an Event by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Event/:EventId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Event",
+								":EventId"
+							],
+							"variable": [
+								{
+									"key": "EventId",
+									"value": "{{EventId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of Event by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an Event for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Event/:EventId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Event",
+								":EventId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "EventId",
+									"value": "{{EventId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of Event for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for Event",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/Event",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"Event"
+							]
+						},
+						"description": "Returns metadata information that describes an Event object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for Event"
+		},
+		{
+			"name": "EventCategory",
+			"item": [
+				{
+					"name": "Returns a list of EventCategory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventCategory",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventCategory"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of EventCategory"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an EventCategory entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventCategory/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventCategory",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of EventCategory"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an EventCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventCategory/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventCategory",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of EventCategory"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an EventCategory by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventCategory/:EventCategoryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventCategory",
+								":EventCategoryId"
+							],
+							"variable": [
+								{
+									"key": "EventCategoryId",
+									"value": "{{EventCategoryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of EventCategory by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an EventCategory for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventCategory/:EventCategoryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventCategory",
+								":EventCategoryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "EventCategoryId",
+									"value": "{{EventCategoryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of EventCategory for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for EventCategory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/EventCategory",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"EventCategory"
+							]
+						},
+						"description": "Returns metadata information that describes an EventCategory object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for EventCategory"
+		},
+		{
+			"name": "EventFunction",
+			"item": [
+				{
+					"name": "Checks permissions for an EventFunction entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventFunction/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventFunction",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of EventFunction"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an EventFunction for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventFunction/:EventFunctionId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventFunction",
+								":EventFunctionId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "EventFunctionId",
+									"value": "{{EventFunctionId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of EventFunction for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for EventFunction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/EventFunction",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"EventFunction"
+							]
+						},
+						"description": "Returns metadata information that describes an EventFunction object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for EventFunction"
+		},
+		{
+			"name": "EventRegistration",
+			"item": [
+				{
+					"name": "Returns an EventRegistration",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventRegistration?EventId=CHAPFEB&PartyId=21699",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRegistration"
+							],
+							"query": [
+								{
+									"key": "EventId",
+									"value": "CHAPFEB"
+								},
+								{
+									"key": "PartyId",
+									"value": "21699"
+								}
+							]
+						},
+						"description": "Returns a single record of an EventRegistration"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes an EventRegistration operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventRegistration/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRegistration",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of EventRegistration"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an EventRegistration entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventRegistration/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRegistration",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of EventRegistration"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an EventRegistration",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventRegistration/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRegistration",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of EventRegistration"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an EventRegistration by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventRegistration/:EventRegistrationId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRegistration",
+								":EventRegistrationId"
+							],
+							"variable": [
+								{
+									"key": "EventRegistrationId",
+									"value": "{{EventRegistrationId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of EventRegistration by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates an EventRegistration by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventRegistration/:EventRegistrationId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRegistration",
+								":EventRegistrationId"
+							],
+							"variable": [
+								{
+									"key": "EventRegistrationId",
+									"value": "{{EventRegistrationId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of EventRegistration by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an EventRegistration for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventRegistration/:EventRegistrationId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRegistration",
+								":EventRegistrationId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "EventRegistrationId",
+									"value": "{{EventRegistrationId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of EventRegistration for the specified id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for EventRegistration"
+		},
+		{
+			"name": "EventRegistrationSummary",
+			"item": [
+				{
+					"name": "Returns an EventRegistrationSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventRegistrationSummary?EventId=CHAPFEB&PartyId=21699",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRegistrationSummary"
+							],
+							"query": [
+								{
+									"key": "EventId",
+									"value": "CHAPFEB"
+								},
+								{
+									"key": "PartyId",
+									"value": "21699"
+								}
+							]
+						},
+						"description": "Returns a single record of an EventRegistrationSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an EventRegistrationSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventRegistrationSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRegistrationSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of EventRegistrationSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an EventRegistrationSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventRegistrationSummary/:EventRegistrationSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRegistrationSummary",
+								":EventRegistrationSummaryId"
+							],
+							"variable": [
+								{
+									"key": "EventRegistrationSummaryId",
+									"value": "{{EventRegistrationSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of EventRegistrationSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an EventRegistrationSummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventRegistrationSummary/:EventRegistrationSummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRegistrationSummary",
+								":EventRegistrationSummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "EventRegistrationSummaryId",
+									"value": "{{EventRegistrationSummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of EventRegistrationSummary for the specified id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for EventRegistrationSummary"
+		},
+		{
+			"name": "EventRelatedFunction",
+			"item": [
+				{
+					"name": "Returns a list of EventRelatedFunction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventRelatedFunction",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRelatedFunction"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of EventRelatedFunction"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates an EventRelatedFunction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventRelatedFunction",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRelatedFunction"
+							]
+						},
+						"description": "Creates an instance of EventRelatedFunction"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an EventRelatedFunction entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventRelatedFunction/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRelatedFunction",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of EventRelatedFunction"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an EventRelatedFunction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventRelatedFunction/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRelatedFunction",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of EventRelatedFunction"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates an EventRelatedFunction by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventRelatedFunction/:EventRelatedFunctionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRelatedFunction",
+								":EventRelatedFunctionId"
+							],
+							"variable": [
+								{
+									"key": "EventRelatedFunctionId",
+									"value": "{{EventRelatedFunctionId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of EventRelatedFunction by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes an EventRelatedFunction by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventRelatedFunction/:EventRelatedFunctionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRelatedFunction",
+								":EventRelatedFunctionId"
+							],
+							"variable": [
+								{
+									"key": "EventRelatedFunctionId",
+									"value": "{{EventRelatedFunctionId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of EventRelatedFunction by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an EventRelatedFunction for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventRelatedFunction/:EventRelatedFunctionId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventRelatedFunction",
+								":EventRelatedFunctionId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "EventRelatedFunctionId",
+									"value": "{{EventRelatedFunctionId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of EventRelatedFunction for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for EventRelatedFunction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/EventRelatedFunction",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"EventRelatedFunction"
+							]
+						},
+						"description": "Returns metadata information that describes an EventRelatedFunction object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for EventRelatedFunction"
+		},
+		{
+			"name": "EventResource",
+			"item": [
+				{
+					"name": "Returns a list of EventResource",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventResource",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResource"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of EventResource"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates an EventResource",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventResource",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResource"
+							]
+						},
+						"description": "Creates an instance of EventResource"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an EventResource entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventResource/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResource",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of EventResource"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an EventResource",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventResource/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResource",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of EventResource"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an EventResource by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventResource/:EventResourceId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResource",
+								":EventResourceId"
+							],
+							"variable": [
+								{
+									"key": "EventResourceId",
+									"value": "{{EventResourceId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of EventResource by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates an EventResource by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventResource/:EventResourceId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResource",
+								":EventResourceId"
+							],
+							"variable": [
+								{
+									"key": "EventResourceId",
+									"value": "{{EventResourceId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of EventResource by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes an EventResource by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventResource/:EventResourceId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResource",
+								":EventResourceId"
+							],
+							"variable": [
+								{
+									"key": "EventResourceId",
+									"value": "{{EventResourceId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of EventResource by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an EventResource for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventResource/:EventResourceId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResource",
+								":EventResourceId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "EventResourceId",
+									"value": "{{EventResourceId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of EventResource for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for EventResource",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/EventResource",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"EventResource"
+							]
+						},
+						"description": "Returns metadata information that describes an EventResource object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for EventResource"
+		},
+		{
+			"name": "EventResourceType",
+			"item": [
+				{
+					"name": "Returns a list of EventResourceType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventResourceType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResourceType"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of EventResourceType"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates an EventResourceType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventResourceType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResourceType"
+							]
+						},
+						"description": "Creates an instance of EventResourceType"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an EventResourceType entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventResourceType/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResourceType",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of EventResourceType"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an EventResourceType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventResourceType/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResourceType",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of EventResourceType"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates an EventResourceType by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventResourceType/:EventResourceTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResourceType",
+								":EventResourceTypeId"
+							],
+							"variable": [
+								{
+									"key": "EventResourceTypeId",
+									"value": "{{EventResourceTypeId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of EventResourceType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes an EventResourceType by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventResourceType/:EventResourceTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResourceType",
+								":EventResourceTypeId"
+							],
+							"variable": [
+								{
+									"key": "EventResourceTypeId",
+									"value": "{{EventResourceTypeId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of EventResourceType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an EventResourceType for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventResourceType/:EventResourceTypeId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventResourceType",
+								":EventResourceTypeId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "EventResourceTypeId",
+									"value": "{{EventResourceTypeId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of EventResourceType for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for EventResourceType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/EventResourceType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"EventResourceType"
+							]
+						},
+						"description": "Returns metadata information that describes an EventResourceType object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for EventResourceType"
+		},
+		{
+			"name": "EventSummary",
+			"item": [
+				{
+					"name": "Returns a list of EventSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of EventSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an EventSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of EventSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an EventSummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventSummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventSummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of EventSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an EventSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventSummary/:EventSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventSummary",
+								":EventSummaryId"
+							],
+							"variable": [
+								{
+									"key": "EventSummaryId",
+									"value": "{{EventSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of EventSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes an EventSummary by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/EventSummary/:EventSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventSummary",
+								":EventSummaryId"
+							],
+							"variable": [
+								{
+									"key": "EventSummaryId",
+									"value": "{{EventSummaryId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of EventSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an EventSummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/EventSummary/:EventSummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"EventSummary",
+								":EventSummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "EventSummaryId",
+									"value": "{{EventSummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of EventSummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for EventSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/EventSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"EventSummary"
+							]
+						},
+						"description": "Returns metadata information that describes an EventSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for EventSummary"
+		},
+		{
+			"name": "LegacyEventFunctionAttendance",
+			"item": [
+				{
+					"name": "Returns a list of LegacyEventFunctionAttendance",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyEventFunctionAttendance",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyEventFunctionAttendance"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyEventFunctionAttendance"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyEventFunctionAttendance entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyEventFunctionAttendance/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyEventFunctionAttendance",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyEventFunctionAttendance"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LegacyEventFunctionAttendance",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyEventFunctionAttendance/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyEventFunctionAttendance",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LegacyEventFunctionAttendance"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LegacyEventFunctionAttendance by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyEventFunctionAttendance/:LegacyEventFunctionAttendanceId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyEventFunctionAttendance",
+								":LegacyEventFunctionAttendanceId"
+							],
+							"variable": [
+								{
+									"key": "LegacyEventFunctionAttendanceId",
+									"value": "{{LegacyEventFunctionAttendanceId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LegacyEventFunctionAttendance by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyEventFunctionAttendance by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyEventFunctionAttendance/:LegacyEventFunctionAttendanceId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyEventFunctionAttendance",
+								":LegacyEventFunctionAttendanceId"
+							],
+							"variable": [
+								{
+									"key": "LegacyEventFunctionAttendanceId",
+									"value": "{{LegacyEventFunctionAttendanceId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyEventFunctionAttendance by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyEventFunctionAttendance for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyEventFunctionAttendance/:LegacyEventFunctionAttendanceId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyEventFunctionAttendance",
+								":LegacyEventFunctionAttendanceId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyEventFunctionAttendanceId",
+									"value": "{{LegacyEventFunctionAttendanceId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyEventFunctionAttendance for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyEventFunctionAttendance",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyEventFunctionAttendance",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyEventFunctionAttendance"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyEventFunctionAttendance object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyEventFunctionAttendance"
+		},
+		{
+			"name": "PartyEventAvailability",
+			"item": [
+				{
+					"name": "Returns a list of PartyEventAvailability",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PartyEventAvailability",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyEventAvailability"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PartyEventAvailability"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PartyEventAvailability entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyEventAvailability/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyEventAvailability",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PartyEventAvailability"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PartyEventAvailability",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyEventAvailability/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyEventAvailability",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PartyEventAvailability"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a PartyEventAvailability by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PartyEventAvailability/:PartyEventAvailabilityId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyEventAvailability",
+								":PartyEventAvailabilityId"
+							],
+							"variable": [
+								{
+									"key": "PartyEventAvailabilityId",
+									"value": "{{PartyEventAvailabilityId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of PartyEventAvailability by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a PartyEventAvailability by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyEventAvailability/:PartyEventAvailabilityId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyEventAvailability",
+								":PartyEventAvailabilityId"
+							],
+							"variable": [
+								{
+									"key": "PartyEventAvailabilityId",
+									"value": "{{PartyEventAvailabilityId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of PartyEventAvailability by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PartyEventAvailability for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PartyEventAvailability/:PartyEventAvailabilityId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyEventAvailability",
+								":PartyEventAvailabilityId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PartyEventAvailabilityId",
+									"value": "{{PartyEventAvailabilityId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PartyEventAvailability for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PartyEventAvailability",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PartyEventAvailability",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PartyEventAvailability"
+							]
+						},
+						"description": "Returns metadata information that describes a PartyEventAvailability object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PartyEventAvailability"
+		},
+		{
+			"name": "ProgramGroup",
+			"item": [
+				{
+					"name": "Returns a list of ProgramGroup",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ProgramGroup",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProgramGroup"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ProgramGroup"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a ProgramGroup entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProgramGroup/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProgramGroup",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ProgramGroup"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a ProgramGroup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProgramGroup/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProgramGroup",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ProgramGroup"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a ProgramGroup by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProgramGroup/:ProgramGroupId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProgramGroup",
+								":ProgramGroupId"
+							],
+							"variable": [
+								{
+									"key": "ProgramGroupId",
+									"value": "{{ProgramGroupId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of ProgramGroup by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a ProgramGroup by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ProgramGroup/:ProgramGroupId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProgramGroup",
+								":ProgramGroupId"
+							],
+							"variable": [
+								{
+									"key": "ProgramGroupId",
+									"value": "{{ProgramGroupId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of ProgramGroup by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a ProgramGroup for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ProgramGroup/:ProgramGroupId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ProgramGroup",
+								":ProgramGroupId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ProgramGroupId",
+									"value": "{{ProgramGroupId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ProgramGroup for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ProgramGroup",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ProgramGroup",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ProgramGroup"
+							]
+						},
+						"description": "Returns metadata information that describes a ProgramGroup object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ProgramGroup"
+		}
+	]
+}

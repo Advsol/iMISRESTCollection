@@ -1,0 +1,4888 @@
+{
+	"info": {
+		"_postman_id": "72c1f23c-9e5b-4436-8cf1-012b7870779b",
+		"name": "Payments",
+		"description": "iMIS Payments API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AutoPayAccount",
+			"item": [
+				{
+					"name": "Returns a list of AutoPayAccount",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayAccount",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayAccount"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of AutoPayAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayAccount/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayAccount",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of AutoPayAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an AutoPayAccount entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayAccount/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayAccount",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of AutoPayAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an AutoPayAccount by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayAccount/:AutoPayAccountId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayAccount",
+								":AutoPayAccountId"
+							],
+							"variable": [
+								{
+									"key": "AutoPayAccountId",
+									"value": "{{AutoPayAccountId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of AutoPayAccount by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates an AutoPayAccount by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayAccount/:AutoPayAccountId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayAccount",
+								":AutoPayAccountId"
+							],
+							"variable": [
+								{
+									"key": "AutoPayAccountId",
+									"value": "{{AutoPayAccountId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of AutoPayAccount by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes an AutoPayAccount by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayAccount/:AutoPayAccountId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayAccount",
+								":AutoPayAccountId"
+							],
+							"variable": [
+								{
+									"key": "AutoPayAccountId",
+									"value": "{{AutoPayAccountId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of AutoPayAccount by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for AutoPayAccount",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/AutoPayAccount",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"AutoPayAccount"
+							]
+						},
+						"description": "Returns metadata information that describes an AutoPayAccount object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for AutoPayAccount"
+		},
+		{
+			"name": "AutoPayInstruction",
+			"item": [
+				{
+					"name": "Returns a list of AutoPayInstruction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayInstruction",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayInstruction"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of AutoPayInstruction"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates an AutoPayInstruction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayInstruction",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayInstruction"
+							]
+						},
+						"description": "Creates an instance of AutoPayInstruction"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayInstruction/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayInstruction",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of AutoPayInstruction"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an AutoPayInstruction entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayInstruction/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayInstruction",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of AutoPayInstruction"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an AutoPayInstruction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayInstruction/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayInstruction",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of AutoPayInstruction"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an AutoPayInstruction by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayInstruction/:AutoPayInstructionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayInstruction",
+								":AutoPayInstructionId"
+							],
+							"variable": [
+								{
+									"key": "AutoPayInstructionId",
+									"value": "{{AutoPayInstructionId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of AutoPayInstruction by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates an AutoPayInstruction by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayInstruction/:AutoPayInstructionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayInstruction",
+								":AutoPayInstructionId"
+							],
+							"variable": [
+								{
+									"key": "AutoPayInstructionId",
+									"value": "{{AutoPayInstructionId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of AutoPayInstruction by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes an AutoPayInstruction by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayInstruction/:AutoPayInstructionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayInstruction",
+								":AutoPayInstructionId"
+							],
+							"variable": [
+								{
+									"key": "AutoPayInstructionId",
+									"value": "{{AutoPayInstructionId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of AutoPayInstruction by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an AutoPayInstruction for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayInstruction/:AutoPayInstructionId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayInstruction",
+								":AutoPayInstructionId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "AutoPayInstructionId",
+									"value": "{{AutoPayInstructionId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of AutoPayInstruction for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for AutoPayInstruction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/AutoPayInstruction",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"AutoPayInstruction"
+							]
+						},
+						"description": "Returns metadata information that describes an AutoPayInstruction object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for AutoPayInstruction"
+		},
+		{
+			"name": "AutoPayProcessor",
+			"item": [
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/AutoPayProcessor/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"AutoPayProcessor",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of AutoPayProcessor"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for AutoPayProcessor"
+		},
+		{
+			"name": "DataVaultAttempt",
+			"item": [
+				{
+					"name": "Returns a list of DataVaultAttempt",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultAttempt",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultAttempt"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of DataVaultAttempt"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultAttempt/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultAttempt",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of DataVaultAttempt"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a DataVaultAttempt entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultAttempt/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultAttempt",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of DataVaultAttempt"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a DataVaultAttempt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultAttempt/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultAttempt",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of DataVaultAttempt"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a DataVaultAttempt for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultAttempt/:DataVaultAttemptId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultAttempt",
+								":DataVaultAttemptId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "DataVaultAttemptId",
+									"value": "{{DataVaultAttemptId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of DataVaultAttempt for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for DataVaultAttempt",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/DataVaultAttempt",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"DataVaultAttempt"
+							]
+						},
+						"description": "Returns metadata information that describes a DataVaultAttempt object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for DataVaultAttempt"
+		},
+		{
+			"name": "DataVaultLog",
+			"item": [
+				{
+					"name": "Returns a list of DataVaultLog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLog"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of DataVaultLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a DataVaultLog",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLog"
+							]
+						},
+						"description": "Creates an instance of DataVaultLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLog/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLog",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of DataVaultLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a DataVaultLog entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLog/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLog",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of DataVaultLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a DataVaultLog",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLog/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLog",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of DataVaultLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a DataVaultLog by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLog/:DataVaultLogId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLog",
+								":DataVaultLogId"
+							],
+							"variable": [
+								{
+									"key": "DataVaultLogId",
+									"value": "{{DataVaultLogId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of DataVaultLog by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a DataVaultLog by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLog/:DataVaultLogId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLog",
+								":DataVaultLogId"
+							],
+							"variable": [
+								{
+									"key": "DataVaultLogId",
+									"value": "{{DataVaultLogId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of DataVaultLog by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a DataVaultLog by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLog/:DataVaultLogId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLog",
+								":DataVaultLogId"
+							],
+							"variable": [
+								{
+									"key": "DataVaultLogId",
+									"value": "{{DataVaultLogId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of DataVaultLog by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a DataVaultLog for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLog/:DataVaultLogId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLog",
+								":DataVaultLogId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "DataVaultLogId",
+									"value": "{{DataVaultLogId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of DataVaultLog for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for DataVaultLog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/DataVaultLog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"DataVaultLog"
+							]
+						},
+						"description": "Returns metadata information that describes a DataVaultLog object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for DataVaultLog"
+		},
+		{
+			"name": "DataVaultLogDetail",
+			"item": [
+				{
+					"name": "Returns a list of DataVaultLogDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLogDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLogDetail"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of DataVaultLogDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLogDetail/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLogDetail",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of DataVaultLogDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a DataVaultLogDetail entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLogDetail/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLogDetail",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of DataVaultLogDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a DataVaultLogDetail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLogDetail/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLogDetail",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of DataVaultLogDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a DataVaultLogDetail for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DataVaultLogDetail/:DataVaultLogDetailId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DataVaultLogDetail",
+								":DataVaultLogDetailId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "DataVaultLogDetailId",
+									"value": "{{DataVaultLogDetailId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of DataVaultLogDetail for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for DataVaultLogDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/DataVaultLogDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"DataVaultLogDetail"
+							]
+						},
+						"description": "Returns metadata information that describes a DataVaultLogDetail object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for DataVaultLogDetail"
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "Returns a list of Payment",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Payment",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Payment"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of Payment"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a Payment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Payment",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Payment"
+							]
+						},
+						"description": "Creates an instance of Payment"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Payment/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Payment",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of Payment"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a Payment entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Payment/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Payment",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of Payment"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a Payment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Payment/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Payment",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of Payment"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a Payment by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Payment/:PaymentId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Payment",
+								":PaymentId"
+							],
+							"variable": [
+								{
+									"key": "PaymentId",
+									"value": "{{PaymentId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of Payment by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a Payment by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Payment/:PaymentId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Payment",
+								":PaymentId"
+							],
+							"variable": [
+								{
+									"key": "PaymentId",
+									"value": "{{PaymentId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of Payment by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a Payment for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Payment/:PaymentId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Payment",
+								":PaymentId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PaymentId",
+									"value": "{{PaymentId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of Payment for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for Payment",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/Payment",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"Payment"
+							]
+						},
+						"description": "Returns metadata information that describes a Payment object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for Payment"
+		},
+		{
+			"name": "PaymentMethod",
+			"item": [
+				{
+					"name": "Returns a list of PaymentMethod",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethod",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethod"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PaymentMethod"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes a PaymentMethod operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethod/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethod",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of PaymentMethod"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PaymentMethod entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethod/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethod",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PaymentMethod"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PaymentMethod",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethod/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethod",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PaymentMethod"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a PaymentMethod by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethod/:PaymentMethodId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethod",
+								":PaymentMethodId"
+							],
+							"variable": [
+								{
+									"key": "PaymentMethodId",
+									"value": "{{PaymentMethodId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of PaymentMethod by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PaymentMethod for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethod/:PaymentMethodId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethod",
+								":PaymentMethodId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PaymentMethodId",
+									"value": "{{PaymentMethodId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PaymentMethod for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PaymentMethod",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PaymentMethod",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PaymentMethod"
+							]
+						},
+						"description": "Returns metadata information that describes a PaymentMethod object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PaymentMethod"
+		},
+		{
+			"name": "PaymentMethodSet",
+			"item": [
+				{
+					"name": "Returns a list of PaymentMethodSet",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSet",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSet"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PaymentMethodSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a PaymentMethodSet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSet",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSet"
+							]
+						},
+						"description": "Creates an instance of PaymentMethodSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PaymentMethodSet entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSet/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSet",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PaymentMethodSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PaymentMethodSet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSet/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSet",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PaymentMethodSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a PaymentMethodSet by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSet/:PaymentMethodSetId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSet",
+								":PaymentMethodSetId"
+							],
+							"variable": [
+								{
+									"key": "PaymentMethodSetId",
+									"value": "{{PaymentMethodSetId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of PaymentMethodSet by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a PaymentMethodSet by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSet/:PaymentMethodSetId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSet",
+								":PaymentMethodSetId"
+							],
+							"variable": [
+								{
+									"key": "PaymentMethodSetId",
+									"value": "{{PaymentMethodSetId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of PaymentMethodSet by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a PaymentMethodSet by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSet/:PaymentMethodSetId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSet",
+								":PaymentMethodSetId"
+							],
+							"variable": [
+								{
+									"key": "PaymentMethodSetId",
+									"value": "{{PaymentMethodSetId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of PaymentMethodSet by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PaymentMethodSet for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSet/:PaymentMethodSetId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSet",
+								":PaymentMethodSetId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PaymentMethodSetId",
+									"value": "{{PaymentMethodSetId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PaymentMethodSet for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PaymentMethodSet",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PaymentMethodSet",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PaymentMethodSet"
+							]
+						},
+						"description": "Returns metadata information that describes a PaymentMethodSet object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PaymentMethodSet"
+		},
+		{
+			"name": "PaymentMethodSetDetail",
+			"item": [
+				{
+					"name": "Returns a list of PaymentMethodSetDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSetDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSetDetail"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PaymentMethodSetDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a PaymentMethodSetDetail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSetDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSetDetail"
+							]
+						},
+						"description": "Creates an instance of PaymentMethodSetDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PaymentMethodSetDetail entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSetDetail/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSetDetail",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PaymentMethodSetDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PaymentMethodSetDetail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSetDetail/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSetDetail",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PaymentMethodSetDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a PaymentMethodSetDetail by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSetDetail/:PaymentMethodSetDetailId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSetDetail",
+								":PaymentMethodSetDetailId"
+							],
+							"variable": [
+								{
+									"key": "PaymentMethodSetDetailId",
+									"value": "{{PaymentMethodSetDetailId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of PaymentMethodSetDetail by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a PaymentMethodSetDetail by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSetDetail/:PaymentMethodSetDetailId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSetDetail",
+								":PaymentMethodSetDetailId"
+							],
+							"variable": [
+								{
+									"key": "PaymentMethodSetDetailId",
+									"value": "{{PaymentMethodSetDetailId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of PaymentMethodSetDetail by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a PaymentMethodSetDetail by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSetDetail/:PaymentMethodSetDetailId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSetDetail",
+								":PaymentMethodSetDetailId"
+							],
+							"variable": [
+								{
+									"key": "PaymentMethodSetDetailId",
+									"value": "{{PaymentMethodSetDetailId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of PaymentMethodSetDetail by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PaymentMethodSetDetail for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentMethodSetDetail/:PaymentMethodSetDetailId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentMethodSetDetail",
+								":PaymentMethodSetDetailId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PaymentMethodSetDetailId",
+									"value": "{{PaymentMethodSetDetailId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PaymentMethodSetDetail for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PaymentMethodSetDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PaymentMethodSetDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PaymentMethodSetDetail"
+							]
+						},
+						"description": "Returns metadata information that describes a PaymentMethodSetDetail object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PaymentMethodSetDetail"
+		},
+		{
+			"name": "PaymentSummary",
+			"item": [
+				{
+					"name": "Returns a list of PaymentSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PaymentSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes a PaymentSummary operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentSummary/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentSummary",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of PaymentSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PaymentSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PaymentSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PaymentSummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentSummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentSummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PaymentSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a PaymentSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentSummary/:PaymentSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentSummary",
+								":PaymentSummaryId"
+							],
+							"variable": [
+								{
+									"key": "PaymentSummaryId",
+									"value": "{{PaymentSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of PaymentSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a PaymentSummary by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentSummary/:PaymentSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentSummary",
+								":PaymentSummaryId"
+							],
+							"variable": [
+								{
+									"key": "PaymentSummaryId",
+									"value": "{{PaymentSummaryId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of PaymentSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a PaymentSummary by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentSummary/:PaymentSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentSummary",
+								":PaymentSummaryId"
+							],
+							"variable": [
+								{
+									"key": "PaymentSummaryId",
+									"value": "{{PaymentSummaryId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of PaymentSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PaymentSummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentSummary/:PaymentSummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentSummary",
+								":PaymentSummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PaymentSummaryId",
+									"value": "{{PaymentSummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PaymentSummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PaymentSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PaymentSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PaymentSummary"
+							]
+						},
+						"description": "Returns metadata information that describes a PaymentSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PaymentSummary"
+		},
+		{
+			"name": "PaymentTerms",
+			"item": [
+				{
+					"name": "Returns a list of PaymentTerms",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTerms",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTerms"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PaymentTerms"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PaymentTerms entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTerms/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTerms",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PaymentTerms"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PaymentTerms",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTerms/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTerms",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PaymentTerms"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a PaymentTerms by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTerms/:PaymentTermsId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTerms",
+								":PaymentTermsId"
+							],
+							"variable": [
+								{
+									"key": "PaymentTermsId",
+									"value": "{{PaymentTermsId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of PaymentTerms by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a PaymentTerms by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTerms/:PaymentTermsId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTerms",
+								":PaymentTermsId"
+							],
+							"variable": [
+								{
+									"key": "PaymentTermsId",
+									"value": "{{PaymentTermsId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of PaymentTerms by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PaymentTerms for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTerms/:PaymentTermsId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTerms",
+								":PaymentTermsId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PaymentTermsId",
+									"value": "{{PaymentTermsId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PaymentTerms for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PaymentTerms",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PaymentTerms",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PaymentTerms"
+							]
+						},
+						"description": "Returns metadata information that describes a PaymentTerms object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PaymentTerms"
+		},
+		{
+			"name": "PaymentTermsMethodSet",
+			"item": [
+				{
+					"name": "Returns a list of PaymentTermsMethodSet",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTermsMethodSet",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTermsMethodSet"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PaymentTermsMethodSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PaymentTermsMethodSet entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTermsMethodSet/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTermsMethodSet",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PaymentTermsMethodSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a PaymentTermsMethodSet by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTermsMethodSet/:PaymentTermsMethodSetId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTermsMethodSet",
+								":PaymentTermsMethodSetId"
+							],
+							"variable": [
+								{
+									"key": "PaymentTermsMethodSetId",
+									"value": "{{PaymentTermsMethodSetId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of PaymentTermsMethodSet by id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PaymentTermsMethodSet"
+		},
+		{
+			"name": "PaymentTermsSummary",
+			"item": [
+				{
+					"name": "Returns a list of PaymentTermsSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTermsSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTermsSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PaymentTermsSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PaymentTermsSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTermsSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTermsSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PaymentTermsSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PaymentTermsSummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTermsSummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTermsSummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PaymentTermsSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a PaymentTermsSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTermsSummary/:PaymentTermsSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTermsSummary",
+								":PaymentTermsSummaryId"
+							],
+							"variable": [
+								{
+									"key": "PaymentTermsSummaryId",
+									"value": "{{PaymentTermsSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of PaymentTermsSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a PaymentTermsSummary by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTermsSummary/:PaymentTermsSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTermsSummary",
+								":PaymentTermsSummaryId"
+							],
+							"variable": [
+								{
+									"key": "PaymentTermsSummaryId",
+									"value": "{{PaymentTermsSummaryId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of PaymentTermsSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PaymentTermsSummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PaymentTermsSummary/:PaymentTermsSummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PaymentTermsSummary",
+								":PaymentTermsSummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PaymentTermsSummaryId",
+									"value": "{{PaymentTermsSummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PaymentTermsSummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PaymentTermsSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PaymentTermsSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PaymentTermsSummary"
+							]
+						},
+						"description": "Returns metadata information that describes a PaymentTermsSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PaymentTermsSummary"
+		},
+		{
+			"name": "Receipt",
+			"item": [
+				{
+					"name": "Returns a list of Receipt",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Receipt",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Receipt"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of Receipt"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes a Receipt operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Receipt/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Receipt",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of Receipt"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a Receipt entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Receipt/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Receipt",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of Receipt"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a Receipt for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Receipt/:ReceiptId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Receipt",
+								":ReceiptId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ReceiptId",
+									"value": "{{ReceiptId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of Receipt for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for Receipt",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/Receipt",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"Receipt"
+							]
+						},
+						"description": "Returns metadata information that describes a Receipt object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for Receipt"
+		},
+		{
+			"name": "ReceiptLine",
+			"item": [
+				{
+					"name": "Returns a list of ReceiptLine",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ReceiptLine",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ReceiptLine"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ReceiptLine"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a ReceiptLine entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ReceiptLine/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ReceiptLine",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ReceiptLine"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a ReceiptLine",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ReceiptLine/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ReceiptLine",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ReceiptLine"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a ReceiptLine by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ReceiptLine/:ReceiptLineId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ReceiptLine",
+								":ReceiptLineId"
+							],
+							"variable": [
+								{
+									"key": "ReceiptLineId",
+									"value": "{{ReceiptLineId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of ReceiptLine by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a ReceiptLine for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ReceiptLine/:ReceiptLineId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ReceiptLine",
+								":ReceiptLineId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ReceiptLineId",
+									"value": "{{ReceiptLineId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ReceiptLine for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ReceiptLine",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ReceiptLine",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ReceiptLine"
+							]
+						},
+						"description": "Returns metadata information that describes a ReceiptLine object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ReceiptLine"
+		}
+	]
+}

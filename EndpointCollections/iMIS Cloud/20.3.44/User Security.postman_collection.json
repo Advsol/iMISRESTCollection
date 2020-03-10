@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "7bb9ee81-b345-428f-b6cb-e1e64b269f3b",
+		"name": "User Security",
+		"description": "iMIS User Security API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UserSecurity",
+			"item": [
+				{
+					"name": "Returns a list of UserSecurity",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/UserSecurity",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"UserSecurity"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of UserSecurity"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/UserSecurity/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"UserSecurity",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of UserSecurity"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a UserSecurity entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/UserSecurity/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"UserSecurity",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of UserSecurity"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a UserSecurity by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/UserSecurity/:UserSecurityId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"UserSecurity",
+								":UserSecurityId"
+							],
+							"variable": [
+								{
+									"key": "UserSecurityId",
+									"value": "{{UserSecurityId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of UserSecurity by id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for UserSecurity"
+		}
+	]
+}

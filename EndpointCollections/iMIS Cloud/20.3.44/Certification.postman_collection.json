@@ -1,0 +1,2377 @@
+{
+	"info": {
+		"_postman_id": "e3b87af2-d624-4d1d-8021-0f14d40732dc",
+		"name": "Certification",
+		"description": "iMIS Certification API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CertificationProgram",
+			"item": [
+				{
+					"name": "Returns a list of CertificationProgram",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgram?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgram"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of CertificationProgram"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes a CertificationProgram operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgram/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgram",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of CertificationProgram"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a CertificationProgram entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgram/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgram",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of CertificationProgram"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a CertificationProgram",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgram/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgram",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of CertificationProgram"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a CertificationProgram by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgram/:CertificationProgramId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgram",
+								":CertificationProgramId"
+							],
+							"variable": [
+								{
+									"key": "CertificationProgramId",
+									"value": "{{CertificationProgramId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of CertificationProgram by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a CertificationProgram by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgram/:CertificationProgramId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgram",
+								":CertificationProgramId"
+							],
+							"variable": [
+								{
+									"key": "CertificationProgramId",
+									"value": "{{CertificationProgramId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of CertificationProgram by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a CertificationProgram for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgram/:CertificationProgramId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgram",
+								":CertificationProgramId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "CertificationProgramId",
+									"value": "{{CertificationProgramId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of CertificationProgram for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for CertificationProgram",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/CertificationProgram",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"CertificationProgram"
+							]
+						},
+						"description": "Returns metadata information that describes a CertificationProgram object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for CertificationProgram"
+		},
+		{
+			"name": "CertificationProgramComponent",
+			"item": [
+				{
+					"name": "Returns a list of CertificationProgramComponent",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramComponent?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramComponent"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of CertificationProgramComponent"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a CertificationProgramComponent entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramComponent/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramComponent",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of CertificationProgramComponent"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a CertificationProgramComponent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramComponent/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramComponent",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of CertificationProgramComponent"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a CertificationProgramComponent by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramComponent/:CertificationProgramComponentId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramComponent",
+								":CertificationProgramComponentId"
+							],
+							"variable": [
+								{
+									"key": "CertificationProgramComponentId",
+									"value": "{{CertificationProgramComponentId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of CertificationProgramComponent by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a CertificationProgramComponent for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramComponent/:CertificationProgramComponentId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramComponent",
+								":CertificationProgramComponentId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "CertificationProgramComponentId",
+									"value": "{{CertificationProgramComponentId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of CertificationProgramComponent for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for CertificationProgramComponent",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/CertificationProgramComponent",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"CertificationProgramComponent"
+							]
+						},
+						"description": "Returns metadata information that describes a CertificationProgramComponent object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for CertificationProgramComponent"
+		},
+		{
+			"name": "CertificationProgramGroup",
+			"item": [
+				{
+					"name": "Returns a list of CertificationProgramGroup",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramGroup?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramGroup"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of CertificationProgramGroup"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a CertificationProgramGroup entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramGroup/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramGroup",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of CertificationProgramGroup"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a CertificationProgramGroup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramGroup/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramGroup",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of CertificationProgramGroup"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a CertificationProgramGroup by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramGroup/:CertificationProgramGroupId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramGroup",
+								":CertificationProgramGroupId"
+							],
+							"variable": [
+								{
+									"key": "CertificationProgramGroupId",
+									"value": "{{CertificationProgramGroupId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of CertificationProgramGroup by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a CertificationProgramGroup for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramGroup/:CertificationProgramGroupId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramGroup",
+								":CertificationProgramGroupId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "CertificationProgramGroupId",
+									"value": "{{CertificationProgramGroupId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of CertificationProgramGroup for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for CertificationProgramGroup",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/CertificationProgramGroup",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"CertificationProgramGroup"
+							]
+						},
+						"description": "Returns metadata information that describes a CertificationProgramGroup object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for CertificationProgramGroup"
+		},
+		{
+			"name": "CertificationProgramRegistration",
+			"item": [
+				{
+					"name": "Returns a list of CertificationProgramRegistration",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramRegistration?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramRegistration"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of CertificationProgramRegistration"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a CertificationProgramRegistration",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramRegistration",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramRegistration"
+							]
+						},
+						"description": "Creates an instance of CertificationProgramRegistration"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramRegistration/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramRegistration",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of CertificationProgramRegistration"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a CertificationProgramRegistration entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramRegistration/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramRegistration",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of CertificationProgramRegistration"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a CertificationProgramRegistration",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "CertificationProgramRegistration to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramRegistration/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramRegistration",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of CertificationProgramRegistration"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a CertificationProgramRegistration by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramRegistration/:CertificationProgramRegistrationId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramRegistration",
+								":CertificationProgramRegistrationId"
+							],
+							"variable": [
+								{
+									"key": "CertificationProgramRegistrationId",
+									"value": "{{CertificationProgramRegistrationId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of CertificationProgramRegistration by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a CertificationProgramRegistration by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "CertificationProgramRegistration to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramRegistration/:CertificationProgramRegistrationId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramRegistration",
+								":CertificationProgramRegistrationId"
+							],
+							"variable": [
+								{
+									"key": "CertificationProgramRegistrationId",
+									"value": "{{CertificationProgramRegistrationId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of CertificationProgramRegistration by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a CertificationProgramRegistration by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramRegistration/:CertificationProgramRegistrationId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramRegistration",
+								":CertificationProgramRegistrationId"
+							],
+							"variable": [
+								{
+									"key": "CertificationProgramRegistrationId",
+									"value": "{{CertificationProgramRegistrationId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of CertificationProgramRegistration by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a CertificationProgramRegistration for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramRegistration/:CertificationProgramRegistrationId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramRegistration",
+								":CertificationProgramRegistrationId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "CertificationProgramRegistrationId",
+									"value": "{{CertificationProgramRegistrationId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of CertificationProgramRegistration for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for CertificationProgramRegistration",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/CertificationProgramRegistration",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"CertificationProgramRegistration"
+							]
+						},
+						"description": "Returns metadata information that describes a CertificationProgramRegistration object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for CertificationProgramRegistration"
+		},
+		{
+			"name": "CertificationProgramSummary",
+			"item": [
+				{
+					"name": "Returns a list of CertificationProgramSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramSummary?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of CertificationProgramSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a CertificationProgramSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "CertificationProgramSummary object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of CertificationProgramSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a CertificationProgramSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CertificationProgramSummary/:CertificationProgramSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CertificationProgramSummary",
+								":CertificationProgramSummaryId"
+							],
+							"variable": [
+								{
+									"key": "CertificationProgramSummaryId",
+									"value": "{{CertificationProgramSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of CertificationProgramSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for CertificationProgramSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/CertificationProgramSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"CertificationProgramSummary"
+							]
+						},
+						"description": "Returns metadata information that describes a CertificationProgramSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for CertificationProgramSummary"
+		},
+		{
+			"name": "ExperienceGrade",
+			"item": [
+				{
+					"name": "Returns a list of ExperienceGrade",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceGrade?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceGrade"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ExperienceGrade"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an ExperienceGrade entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ExperienceGrade object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceGrade/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceGrade",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ExperienceGrade"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an ExperienceGrade by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceGrade/:ExperienceGradeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceGrade",
+								":ExperienceGradeId"
+							],
+							"variable": [
+								{
+									"key": "ExperienceGradeId",
+									"value": "{{ExperienceGradeId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of ExperienceGrade by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ExperienceGrade",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ExperienceGrade",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ExperienceGrade"
+							]
+						},
+						"description": "Returns metadata information that describes an ExperienceGrade object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ExperienceGrade"
+		},
+		{
+			"name": "ExperienceLocation",
+			"item": [
+				{
+					"name": "Returns a list of ExperienceLocation",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceLocation?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceLocation"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ExperienceLocation"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates an ExperienceLocation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ExperienceLocation to be Created"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceLocation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceLocation"
+							]
+						},
+						"description": "Creates an instance of ExperienceLocation"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an ExperienceLocation entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ExperienceLocation object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceLocation/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceLocation",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ExperienceLocation"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an ExperienceLocation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ExperienceLocation to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceLocation/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceLocation",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ExperienceLocation"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an ExperienceLocation by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceLocation/:ExperienceLocationId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceLocation",
+								":ExperienceLocationId"
+							],
+							"variable": [
+								{
+									"key": "ExperienceLocationId",
+									"value": "{{ExperienceLocationId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of ExperienceLocation by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates an ExperienceLocation by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ExperienceLocation to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceLocation/:ExperienceLocationId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceLocation",
+								":ExperienceLocationId"
+							],
+							"variable": [
+								{
+									"key": "ExperienceLocationId",
+									"value": "{{ExperienceLocationId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of ExperienceLocation by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes an ExperienceLocation by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceLocation/:ExperienceLocationId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceLocation",
+								":ExperienceLocationId"
+							],
+							"variable": [
+								{
+									"key": "ExperienceLocationId",
+									"value": "{{ExperienceLocationId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of ExperienceLocation by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an ExperienceLocation for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceLocation/:ExperienceLocationId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceLocation",
+								":ExperienceLocationId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ExperienceLocationId",
+									"value": "{{ExperienceLocationId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ExperienceLocation for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ExperienceLocation",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ExperienceLocation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ExperienceLocation"
+							]
+						},
+						"description": "Returns metadata information that describes an ExperienceLocation object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ExperienceLocation"
+		},
+		{
+			"name": "ExperienceUnit",
+			"item": [
+				{
+					"name": "Returns a list of ExperienceUnit",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceUnit?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceUnit"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ExperienceUnit"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an ExperienceUnit entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ExperienceUnit object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceUnit/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceUnit",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ExperienceUnit"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an ExperienceUnit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ExperienceUnit to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceUnit/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceUnit",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ExperienceUnit"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an ExperienceUnit by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceUnit/:ExperienceUnitId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceUnit",
+								":ExperienceUnitId"
+							],
+							"variable": [
+								{
+									"key": "ExperienceUnitId",
+									"value": "{{ExperienceUnitId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of ExperienceUnit by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates an ExperienceUnit by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ExperienceUnit to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceUnit/:ExperienceUnitId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceUnit",
+								":ExperienceUnitId"
+							],
+							"variable": [
+								{
+									"key": "ExperienceUnitId",
+									"value": "{{ExperienceUnitId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of ExperienceUnit by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an ExperienceUnit for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ExperienceUnit/:ExperienceUnitId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ExperienceUnit",
+								":ExperienceUnitId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ExperienceUnitId",
+									"value": "{{ExperienceUnitId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ExperienceUnit for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ExperienceUnit",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ExperienceUnit",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ExperienceUnit"
+							]
+						},
+						"description": "Returns metadata information that describes an ExperienceUnit object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ExperienceUnit"
+		}
+	]
+}

@@ -1,0 +1,948 @@
+{
+	"info": {
+		"_postman_id": "c6f6f339-25f7-44b1-b91d-13a781c3a3b2",
+		"name": "Order Processing",
+		"description": "iMIS Order Processing API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ComboOrder",
+			"item": [
+				{
+					"name": "Creates a ComboOrder",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ComboOrder",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ComboOrder"
+							]
+						},
+						"description": "Creates an instance of ComboOrder"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ComboOrder"
+		},
+		{
+			"name": "ItemSale",
+			"item": [
+				{
+					"name": "Executes an ItemSale operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ItemSale/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemSale",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of ItemSale"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an ItemSale entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ItemSale/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemSale",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ItemSale"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an ItemSale for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ItemSale/:ItemSaleId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ItemSale",
+								":ItemSaleId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ItemSaleId",
+									"value": "{{ItemSaleId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ItemSale for the specified id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ItemSale"
+		},
+		{
+			"name": "LegacyOrder",
+			"item": [
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyOrder/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyOrder",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of LegacyOrder"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyOrder entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyOrder/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyOrder",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyOrder"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyOrder"
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Creates an Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Order",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Order"
+							]
+						},
+						"description": "Creates an instance of Order"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes an Order operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Order/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Order",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of Order"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an Order entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Order/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Order",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of Order"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Order/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Order",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of Order"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an Order for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Order/:OrderId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Order",
+								":OrderId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "OrderId",
+									"value": "{{OrderId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of Order for the specified id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for Order"
+		},
+		{
+			"name": "OrderStageProcessingNotificationLog",
+			"item": [
+				{
+					"name": "Returns a list of OrderStageProcessingNotificationLog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/OrderStageProcessingNotificationLog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"OrderStageProcessingNotificationLog"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of OrderStageProcessingNotificationLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an OrderStageProcessingNotificationLog entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/OrderStageProcessingNotificationLog/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"OrderStageProcessingNotificationLog",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of OrderStageProcessingNotificationLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an OrderStageProcessingNotificationLog",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/OrderStageProcessingNotificationLog/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"OrderStageProcessingNotificationLog",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of OrderStageProcessingNotificationLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an OrderStageProcessingNotificationLog for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/OrderStageProcessingNotificationLog/:OrderStageProcessingNotificationLogId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"OrderStageProcessingNotificationLog",
+								":OrderStageProcessingNotificationLogId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "OrderStageProcessingNotificationLogId",
+									"value": "{{OrderStageProcessingNotificationLogId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of OrderStageProcessingNotificationLog for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for OrderStageProcessingNotificationLog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/OrderStageProcessingNotificationLog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"OrderStageProcessingNotificationLog"
+							]
+						},
+						"description": "Returns metadata information that describes an OrderStageProcessingNotificationLog object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for OrderStageProcessingNotificationLog"
+		},
+		{
+			"name": "OrderStageProcessingNotificationLogDetail",
+			"item": [
+				{
+					"name": "Returns a list of OrderStageProcessingNotificationLogDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/OrderStageProcessingNotificationLogDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"OrderStageProcessingNotificationLogDetail"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of OrderStageProcessingNotificationLogDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an OrderStageProcessingNotificationLogDetail entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/OrderStageProcessingNotificationLogDetail/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"OrderStageProcessingNotificationLogDetail",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of OrderStageProcessingNotificationLogDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an OrderStageProcessingNotificationLogDetail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/OrderStageProcessingNotificationLogDetail/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"OrderStageProcessingNotificationLogDetail",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of OrderStageProcessingNotificationLogDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an OrderStageProcessingNotificationLogDetail for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/OrderStageProcessingNotificationLogDetail/:OrderStageProcessingNotificationLogDetailId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"OrderStageProcessingNotificationLogDetail",
+								":OrderStageProcessingNotificationLogDetailId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "OrderStageProcessingNotificationLogDetailId",
+									"value": "{{OrderStageProcessingNotificationLogDetailId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of OrderStageProcessingNotificationLogDetail for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for OrderStageProcessingNotificationLogDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/OrderStageProcessingNotificationLogDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"OrderStageProcessingNotificationLogDetail"
+							]
+						},
+						"description": "Returns metadata information that describes an OrderStageProcessingNotificationLogDetail object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for OrderStageProcessingNotificationLogDetail"
+		}
+	]
+}

@@ -1,0 +1,2097 @@
+{
+	"info": {
+		"_postman_id": "4b55bf06-d40b-446d-b862-1d8100307e26",
+		"name": "Invoice",
+		"description": "iMIS Invoice API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BillingIssueNotificationLog",
+			"item": [
+				{
+					"name": "Returns a list of BillingIssueNotificationLog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BillingIssueNotificationLog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingIssueNotificationLog"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of BillingIssueNotificationLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a BillingIssueNotificationLog entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BillingIssueNotificationLog/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingIssueNotificationLog",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of BillingIssueNotificationLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a BillingIssueNotificationLog for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BillingIssueNotificationLog/:BillingIssueNotificationLogId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingIssueNotificationLog",
+								":BillingIssueNotificationLogId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "BillingIssueNotificationLogId",
+									"value": "{{BillingIssueNotificationLogId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of BillingIssueNotificationLog for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for BillingIssueNotificationLog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/BillingIssueNotificationLog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"BillingIssueNotificationLog"
+							]
+						},
+						"description": "Returns metadata information that describes a BillingIssueNotificationLog object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for BillingIssueNotificationLog"
+		},
+		{
+			"name": "BillingIssueNotificationLogDetail",
+			"item": [
+				{
+					"name": "Returns a list of BillingIssueNotificationLogDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BillingIssueNotificationLogDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingIssueNotificationLogDetail"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of BillingIssueNotificationLogDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a BillingIssueNotificationLogDetail entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BillingIssueNotificationLogDetail/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingIssueNotificationLogDetail",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of BillingIssueNotificationLogDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a BillingIssueNotificationLogDetail for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BillingIssueNotificationLogDetail/:BillingIssueNotificationLogDetailId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingIssueNotificationLogDetail",
+								":BillingIssueNotificationLogDetailId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "BillingIssueNotificationLogDetailId",
+									"value": "{{BillingIssueNotificationLogDetailId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of BillingIssueNotificationLogDetail for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for BillingIssueNotificationLogDetail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/BillingIssueNotificationLogDetail",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"BillingIssueNotificationLogDetail"
+							]
+						},
+						"description": "Returns metadata information that describes a BillingIssueNotificationLogDetail object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for BillingIssueNotificationLogDetail"
+		},
+		{
+			"name": "BillingLog",
+			"item": [
+				{
+					"name": "Returns a list of BillingLog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BillingLog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingLog"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of BillingLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a BillingLog entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BillingLog/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingLog",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of BillingLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a BillingLog by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BillingLog/:BillingLogId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingLog",
+								":BillingLogId"
+							],
+							"variable": [
+								{
+									"key": "BillingLogId",
+									"value": "{{BillingLogId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of BillingLog by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a BillingLog by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BillingLog/:BillingLogId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingLog",
+								":BillingLogId"
+							],
+							"variable": [
+								{
+									"key": "BillingLogId",
+									"value": "{{BillingLogId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of BillingLog by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a BillingLog for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BillingLog/:BillingLogId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingLog",
+								":BillingLogId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "BillingLogId",
+									"value": "{{BillingLogId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of BillingLog for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for BillingLog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/BillingLog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"BillingLog"
+							]
+						},
+						"description": "Returns metadata information that describes a BillingLog object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for BillingLog"
+		},
+		{
+			"name": "BillingLogItem",
+			"item": [
+				{
+					"name": "Returns a list of BillingLogItem",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BillingLogItem",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingLogItem"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of BillingLogItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a BillingLogItem",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BillingLogItem",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingLogItem"
+							]
+						},
+						"description": "Creates an instance of BillingLogItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a BillingLogItem entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BillingLogItem/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingLogItem",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of BillingLogItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a BillingLogItem",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BillingLogItem/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingLogItem",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of BillingLogItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a BillingLogItem by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BillingLogItem/:BillingLogItemId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingLogItem",
+								":BillingLogItemId"
+							],
+							"variable": [
+								{
+									"key": "BillingLogItemId",
+									"value": "{{BillingLogItemId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of BillingLogItem by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a BillingLogItem by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BillingLogItem/:BillingLogItemId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingLogItem",
+								":BillingLogItemId"
+							],
+							"variable": [
+								{
+									"key": "BillingLogItemId",
+									"value": "{{BillingLogItemId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of BillingLogItem by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a BillingLogItem for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BillingLogItem/:BillingLogItemId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BillingLogItem",
+								":BillingLogItemId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "BillingLogItemId",
+									"value": "{{BillingLogItemId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of BillingLogItem for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for BillingLogItem",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/BillingLogItem",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"BillingLogItem"
+							]
+						},
+						"description": "Returns metadata information that describes a BillingLogItem object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for BillingLogItem"
+		},
+		{
+			"name": "Invoice",
+			"item": [
+				{
+					"name": "Returns a list of Invoice",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Invoice",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Invoice"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of Invoice"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Invoice/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Invoice",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of Invoice"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an Invoice entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Invoice/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Invoice",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of Invoice"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an Invoice by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Invoice/:InvoiceId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Invoice",
+								":InvoiceId"
+							],
+							"variable": [
+								{
+									"key": "InvoiceId",
+									"value": "{{InvoiceId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of Invoice by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an Invoice for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Invoice/:InvoiceId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Invoice",
+								":InvoiceId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "InvoiceId",
+									"value": "{{InvoiceId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of Invoice for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for Invoice",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/Invoice",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"Invoice"
+							]
+						},
+						"description": "Returns metadata information that describes an Invoice object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for Invoice"
+		},
+		{
+			"name": "InvoiceSummary",
+			"item": [
+				{
+					"name": "Returns a list of InvoiceSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/InvoiceSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"InvoiceSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of InvoiceSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes an InvoiceSummary operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/InvoiceSummary/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"InvoiceSummary",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of InvoiceSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an InvoiceSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/InvoiceSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"InvoiceSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of InvoiceSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an InvoiceSummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/InvoiceSummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"InvoiceSummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of InvoiceSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an InvoiceSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/InvoiceSummary/:InvoiceSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"InvoiceSummary",
+								":InvoiceSummaryId"
+							],
+							"variable": [
+								{
+									"key": "InvoiceSummaryId",
+									"value": "{{InvoiceSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of InvoiceSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an InvoiceSummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/InvoiceSummary/:InvoiceSummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"InvoiceSummary",
+								":InvoiceSummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "InvoiceSummaryId",
+									"value": "{{InvoiceSummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of InvoiceSummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for InvoiceSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/InvoiceSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"InvoiceSummary"
+							]
+						},
+						"description": "Returns metadata information that describes an InvoiceSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for InvoiceSummary"
+		},
+		{
+			"name": "LegacyPartyMembership",
+			"item": [
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyPartyMembership/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyPartyMembership",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of LegacyPartyMembership"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyPartyMembership"
+		},
+		{
+			"name": "LegacySubscription",
+			"item": [
+				{
+					"name": "Returns a list of LegacySubscription",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacySubscription",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacySubscription"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacySubscription"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacySubscription entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacySubscription/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacySubscription",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacySubscription"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacySubscription by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacySubscription/:LegacySubscriptionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacySubscription",
+								":LegacySubscriptionId"
+							],
+							"variable": [
+								{
+									"key": "LegacySubscriptionId",
+									"value": "{{LegacySubscriptionId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacySubscription by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacySubscription for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacySubscription/:LegacySubscriptionId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacySubscription",
+								":LegacySubscriptionId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacySubscriptionId",
+									"value": "{{LegacySubscriptionId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacySubscription for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacySubscription",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacySubscription",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacySubscription"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacySubscription object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacySubscription"
+		},
+		{
+			"name": "PartyPledgeScheduledPayment",
+			"item": [
+				{
+					"name": "Checks permissions for a PartyPledgeScheduledPayment entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyPledgeScheduledPayment/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyPledgeScheduledPayment",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PartyPledgeScheduledPayment"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PartyPledgeScheduledPayment"
+		},
+		{
+			"name": "ScheduledPayment",
+			"item": [
+				{
+					"name": "Returns a list of ScheduledPayment",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ScheduledPayment",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ScheduledPayment"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ScheduledPayment"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a ScheduledPayment entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ScheduledPayment/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ScheduledPayment",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ScheduledPayment"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a ScheduledPayment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ScheduledPayment/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ScheduledPayment",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ScheduledPayment"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a ScheduledPayment for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ScheduledPayment/:ScheduledPaymentId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ScheduledPayment",
+								":ScheduledPaymentId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ScheduledPaymentId",
+									"value": "{{ScheduledPaymentId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ScheduledPayment for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ScheduledPayment",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ScheduledPayment",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ScheduledPayment"
+							]
+						},
+						"description": "Returns metadata information that describes a ScheduledPayment object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ScheduledPayment"
+		}
+	]
+}

@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "546edb09-dd99-4fbc-9292-8a1c0494b531",
+		"name": "Authentication",
+		"description": "iMIS Authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Token",
+			"item": [
+				{
+					"name": "Request new token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "88ac3844-bc57-4e5f-911e-ec60bc85f838",
+								"exec": [
+									"pm.environment.set(\"access_token\", pm.response.json().access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "brianm",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "demo123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{URL}}/Token",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"Token"
+							]
+						},
+						"description": "Create a new Bearer `access_token`."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for Token"
+		}
+	]
+}

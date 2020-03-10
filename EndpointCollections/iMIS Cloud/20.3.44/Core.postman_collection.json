@@ -1,0 +1,7852 @@
+{
+	"info": {
+		"_postman_id": "69c0ebfa-8bae-45dc-a44f-e7d0c6bc41cc",
+		"name": "Core",
+		"description": "iMIS Core API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BOEntityDefinition",
+			"item": [
+				{
+					"name": "Returns a list of BOEntityDefinition",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BOEntityDefinition?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BOEntityDefinition"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of BOEntityDefinition"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BOEntityDefinition/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BOEntityDefinition",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of BOEntityDefinition"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a BOEntityDefinition entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BOEntityDefinition/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BOEntityDefinition",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of BOEntityDefinition"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a BOEntityDefinition by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BOEntityDefinition/:BOEntityDefinitionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BOEntityDefinition",
+								":BOEntityDefinitionId"
+							],
+							"variable": [
+								{
+									"key": "BOEntityDefinitionId",
+									"value": "{{BOEntityDefinitionId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of BOEntityDefinition by id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for BOEntityDefinition"
+		},
+		{
+			"name": "ChangeLog",
+			"item": [
+				{
+					"name": "Returns a list of ChangeLog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ChangeLog?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ChangeLog"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ChangeLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a ChangeLog entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ChangeLog/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ChangeLog",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ChangeLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a ChangeLog by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ChangeLog/:ChangeLogId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ChangeLog",
+								":ChangeLogId"
+							],
+							"variable": [
+								{
+									"key": "ChangeLogId",
+									"value": "{{ChangeLogId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of ChangeLog by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a ChangeLog for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ChangeLog/:ChangeLogId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ChangeLog",
+								":ChangeLogId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ChangeLogId",
+									"value": "{{ChangeLogId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ChangeLog for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ChangeLog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ChangeLog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ChangeLog"
+							]
+						},
+						"description": "Returns metadata information that describes a ChangeLog object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ChangeLog"
+		},
+		{
+			"name": "ContentItem",
+			"item": [
+				{
+					"name": "Checks permissions for a ContentItem entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ContentItem/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ContentItem",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ContentItem"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ContentItem"
+		},
+		{
+			"name": "CultureFormat",
+			"item": [
+				{
+					"name": "Returns a list of CultureFormat",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CultureFormat?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CultureFormat"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of CultureFormat"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a CultureFormat entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CultureFormat/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CultureFormat",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of CultureFormat"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for CultureFormat"
+		},
+		{
+			"name": "Document",
+			"item": [
+				{
+					"name": "Returns a list of Document",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Document?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Document"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of Document"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Document/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Document",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of Document"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a Document entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Document/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Document",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of Document"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a Document",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Document/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Document",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of Document"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a Document for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Document/:DocumentId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Document",
+								":DocumentId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "DocumentId",
+									"value": "{{DocumentId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of Document for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for Document",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/Document",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"Document"
+							]
+						},
+						"description": "Returns metadata information that describes a Document object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for Document"
+		},
+		{
+			"name": "DocumentSummary",
+			"item": [
+				{
+					"name": "Returns a list of DocumentSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DocumentSummary?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DocumentSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of DocumentSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DocumentSummary/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DocumentSummary",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of DocumentSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a DocumentSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DocumentSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DocumentSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of DocumentSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a DocumentSummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DocumentSummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DocumentSummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of DocumentSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a DocumentSummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DocumentSummary/:DocumentSummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DocumentSummary",
+								":DocumentSummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "DocumentSummaryId",
+									"value": "{{DocumentSummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of DocumentSummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for DocumentSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/DocumentSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"DocumentSummary"
+							]
+						},
+						"description": "Returns metadata information that describes a DocumentSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for DocumentSummary"
+		},
+		{
+			"name": "GatewayAccount",
+			"item": [
+				{
+					"name": "Returns a list of GatewayAccount",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GatewayAccount?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GatewayAccount"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of GatewayAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a GatewayAccount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GatewayAccount",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GatewayAccount"
+							]
+						},
+						"description": "Creates an instance of GatewayAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a GatewayAccount entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GatewayAccount/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GatewayAccount",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of GatewayAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a GatewayAccount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GatewayAccount/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GatewayAccount",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of GatewayAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a GatewayAccount by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GatewayAccount/:GatewayAccountId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GatewayAccount",
+								":GatewayAccountId"
+							],
+							"variable": [
+								{
+									"key": "GatewayAccountId",
+									"value": "{{GatewayAccountId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of GatewayAccount by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a GatewayAccount by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GatewayAccount/:GatewayAccountId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GatewayAccount",
+								":GatewayAccountId"
+							],
+							"variable": [
+								{
+									"key": "GatewayAccountId",
+									"value": "{{GatewayAccountId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of GatewayAccount by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a GatewayAccount by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GatewayAccount/:GatewayAccountId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GatewayAccount",
+								":GatewayAccountId"
+							],
+							"variable": [
+								{
+									"key": "GatewayAccountId",
+									"value": "{{GatewayAccountId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of GatewayAccount by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a GatewayAccount for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GatewayAccount/:GatewayAccountId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GatewayAccount",
+								":GatewayAccountId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "GatewayAccountId",
+									"value": "{{GatewayAccountId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of GatewayAccount for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for GatewayAccount",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/GatewayAccount",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"GatewayAccount"
+							]
+						},
+						"description": "Returns metadata information that describes a GatewayAccount object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for GatewayAccount"
+		},
+		{
+			"name": "GenTable",
+			"item": [
+				{
+					"name": "Returns a list of GenTable",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GenTable?",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GenTable"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of GenTable"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a GenTable",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "GenTable to be Created"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GenTable",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GenTable"
+							]
+						},
+						"description": "Creates an instance of GenTable"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GenTable/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GenTable",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of GenTable"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a GenTable entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GenTable/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GenTable",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of GenTable"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a GenTable",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "GenTable to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GenTable/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GenTable",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of GenTable"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a GenTable by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GenTable/:GenTableId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GenTable",
+								":GenTableId"
+							],
+							"variable": [
+								{
+									"key": "GenTableId",
+									"value": "{{GenTableId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of GenTable by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a GenTable by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "GenTable to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GenTable/:GenTableId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GenTable",
+								":GenTableId"
+							],
+							"variable": [
+								{
+									"key": "GenTableId",
+									"value": "{{GenTableId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of GenTable by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a GenTable by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GenTable/:GenTableId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GenTable",
+								":GenTableId"
+							],
+							"variable": [
+								{
+									"key": "GenTableId",
+									"value": "{{GenTableId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of GenTable by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a GenTable for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GenTable/:GenTableId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GenTable",
+								":GenTableId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "GenTableId",
+									"value": "{{GenTableId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of GenTable for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for GenTable",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/GenTable",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"GenTable"
+							]
+						},
+						"description": "Returns metadata information that describes a GenTable object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for GenTable"
+		},
+		{
+			"name": "ImportBatch",
+			"item": [
+				{
+					"name": "Returns a list of ImportBatch",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatch?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatch"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ImportBatch"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates an ImportBatch",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ImportBatch to be Created"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatch",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatch"
+							]
+						},
+						"description": "Creates an instance of ImportBatch"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes an ImportBatch operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ImportBatchPostRequest object to execute"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatch/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatch",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of ImportBatch"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an ImportBatch entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ImportBatch object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatch/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatch",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ImportBatch"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an ImportBatch",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ImportBatch to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatch/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatch",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ImportBatch"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an ImportBatch by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatch/:ImportBatchId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatch",
+								":ImportBatchId"
+							],
+							"variable": [
+								{
+									"key": "ImportBatchId",
+									"value": "{{ImportBatchId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of ImportBatch by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates an ImportBatch by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ImportBatch to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatch/:ImportBatchId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatch",
+								":ImportBatchId"
+							],
+							"variable": [
+								{
+									"key": "ImportBatchId",
+									"value": "{{ImportBatchId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of ImportBatch by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes an ImportBatch by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatch/:ImportBatchId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatch",
+								":ImportBatchId"
+							],
+							"variable": [
+								{
+									"key": "ImportBatchId",
+									"value": "{{ImportBatchId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of ImportBatch by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an ImportBatch for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatch/:ImportBatchId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatch",
+								":ImportBatchId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ImportBatchId",
+									"value": "{{ImportBatchId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ImportBatch for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ImportBatch",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ImportBatch",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ImportBatch"
+							]
+						},
+						"description": "Returns metadata information that describes an ImportBatch object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ImportBatch"
+		},
+		{
+			"name": "ImportBatchSummary",
+			"item": [
+				{
+					"name": "Returns a list of ImportBatchSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatchSummary?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatchSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ImportBatchSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an ImportBatchSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ImportBatchSummary object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatchSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatchSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ImportBatchSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an ImportBatchSummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ImportBatchSummary to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatchSummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatchSummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ImportBatchSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an ImportBatchSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatchSummary/:ImportBatchSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatchSummary",
+								":ImportBatchSummaryId"
+							],
+							"variable": [
+								{
+									"key": "ImportBatchSummaryId",
+									"value": "{{ImportBatchSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of ImportBatchSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an ImportBatchSummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ImportBatchSummary/:ImportBatchSummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportBatchSummary",
+								":ImportBatchSummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ImportBatchSummaryId",
+									"value": "{{ImportBatchSummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ImportBatchSummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ImportBatchSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ImportBatchSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ImportBatchSummary"
+							]
+						},
+						"description": "Returns metadata information that describes an ImportBatchSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ImportBatchSummary"
+		},
+		{
+			"name": "ImportFileType",
+			"item": [
+				{
+					"name": "Returns a list of ImportFileType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ImportFileType?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportFileType"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ImportFileType"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes an ImportFileType operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ImportFileRequest object to execute"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ImportFileType/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportFileType",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of ImportFileType"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an ImportFileType entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ImportFileType object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ImportFileType/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportFileType",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ImportFileType"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an ImportFileType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ImportFileType to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ImportFileType/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportFileType",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ImportFileType"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an ImportFileType by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ImportFileType/:ImportFileTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportFileType",
+								":ImportFileTypeId"
+							],
+							"variable": [
+								{
+									"key": "ImportFileTypeId",
+									"value": "{{ImportFileTypeId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of ImportFileType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates an ImportFileType by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "ImportFileType to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ImportFileType/:ImportFileTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportFileType",
+								":ImportFileTypeId"
+							],
+							"variable": [
+								{
+									"key": "ImportFileTypeId",
+									"value": "{{ImportFileTypeId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of ImportFileType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an ImportFileType for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ImportFileType/:ImportFileTypeId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ImportFileType",
+								":ImportFileTypeId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ImportFileTypeId",
+									"value": "{{ImportFileTypeId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ImportFileType for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ImportFileType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ImportFileType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ImportFileType"
+							]
+						},
+						"description": "Returns metadata information that describes an ImportFileType object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ImportFileType"
+		},
+		{
+			"name": "LegacyActivityType",
+			"item": [
+				{
+					"name": "Returns a list of LegacyActivityType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyActivityType?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyActivityType"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyActivityType"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LegacyActivityType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LegacyActivityType to be Created"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyActivityType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyActivityType"
+							]
+						},
+						"description": "Creates an instance of LegacyActivityType"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyActivityType entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LegacyActivityType object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyActivityType/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyActivityType",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyActivityType"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LegacyActivityType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LegacyActivityType to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyActivityType/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyActivityType",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LegacyActivityType"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LegacyActivityType by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyActivityType/:LegacyActivityTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyActivityType",
+								":LegacyActivityTypeId"
+							],
+							"variable": [
+								{
+									"key": "LegacyActivityTypeId",
+									"value": "{{LegacyActivityTypeId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LegacyActivityType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyActivityType by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LegacyActivityType to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyActivityType/:LegacyActivityTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyActivityType",
+								":LegacyActivityTypeId"
+							],
+							"variable": [
+								{
+									"key": "LegacyActivityTypeId",
+									"value": "{{LegacyActivityTypeId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyActivityType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LegacyActivityType by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyActivityType/:LegacyActivityTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyActivityType",
+								":LegacyActivityTypeId"
+							],
+							"variable": [
+								{
+									"key": "LegacyActivityTypeId",
+									"value": "{{LegacyActivityTypeId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LegacyActivityType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyActivityType for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyActivityType/:LegacyActivityTypeId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyActivityType",
+								":LegacyActivityTypeId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyActivityTypeId",
+									"value": "{{LegacyActivityTypeId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyActivityType for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyActivityType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyActivityType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyActivityType"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyActivityType object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyActivityType"
+		},
+		{
+			"name": "LegacyCashAccount",
+			"item": [
+				{
+					"name": "Returns a list of LegacyCashAccount",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCashAccount?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCashAccount"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyCashAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyCashAccount entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LegacyCashAccount object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCashAccount/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCashAccount",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyCashAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LegacyCashAccount by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCashAccount/:LegacyCashAccountId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCashAccount",
+								":LegacyCashAccountId"
+							],
+							"variable": [
+								{
+									"key": "LegacyCashAccountId",
+									"value": "{{LegacyCashAccountId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LegacyCashAccount by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyCashAccount by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LegacyCashAccount to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCashAccount/:LegacyCashAccountId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCashAccount",
+								":LegacyCashAccountId"
+							],
+							"variable": [
+								{
+									"key": "LegacyCashAccountId",
+									"value": "{{LegacyCashAccountId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyCashAccount by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyCashAccount for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCashAccount/:LegacyCashAccountId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCashAccount",
+								":LegacyCashAccountId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyCashAccountId",
+									"value": "{{LegacyCashAccountId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyCashAccount for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyCashAccount",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyCashAccount",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyCashAccount"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyCashAccount object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyCashAccount"
+		},
+		{
+			"name": "LegacyCustomerType",
+			"item": [
+				{
+					"name": "Returns a list of LegacyCustomerType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCustomerType?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCustomerType"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyCustomerType"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LegacyCustomerType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LegacyCustomerType to be Created"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCustomerType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCustomerType"
+							]
+						},
+						"description": "Creates an instance of LegacyCustomerType"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyCustomerType entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LegacyCustomerType object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCustomerType/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCustomerType",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyCustomerType"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LegacyCustomerType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LegacyCustomerType to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCustomerType/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCustomerType",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LegacyCustomerType"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LegacyCustomerType by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCustomerType/:LegacyCustomerTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCustomerType",
+								":LegacyCustomerTypeId"
+							],
+							"variable": [
+								{
+									"key": "LegacyCustomerTypeId",
+									"value": "{{LegacyCustomerTypeId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LegacyCustomerType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyCustomerType by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LegacyCustomerType to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCustomerType/:LegacyCustomerTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCustomerType",
+								":LegacyCustomerTypeId"
+							],
+							"variable": [
+								{
+									"key": "LegacyCustomerTypeId",
+									"value": "{{LegacyCustomerTypeId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyCustomerType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LegacyCustomerType by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCustomerType/:LegacyCustomerTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCustomerType",
+								":LegacyCustomerTypeId"
+							],
+							"variable": [
+								{
+									"key": "LegacyCustomerTypeId",
+									"value": "{{LegacyCustomerTypeId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LegacyCustomerType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyCustomerType for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyCustomerType/:LegacyCustomerTypeId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyCustomerType",
+								":LegacyCustomerTypeId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyCustomerTypeId",
+									"value": "{{LegacyCustomerTypeId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyCustomerType for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyCustomerType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyCustomerType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyCustomerType"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyCustomerType object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyCustomerType"
+		},
+		{
+			"name": "LocalizationControlProperty",
+			"item": [
+				{
+					"name": "Returns a list of LocalizationControlProperty",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlProperty?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlProperty"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LocalizationControlProperty"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LocalizationControlProperty",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationControlProperty to be Created"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlProperty",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlProperty"
+							]
+						},
+						"description": "Creates an instance of LocalizationControlProperty"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LocalizationControlProperty entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationControlProperty object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlProperty/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlProperty",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LocalizationControlProperty"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LocalizationControlProperty",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationControlProperty to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlProperty/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlProperty",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LocalizationControlProperty"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LocalizationControlProperty by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationControlProperty to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlProperty/:LocalizationControlPropertyId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlProperty",
+								":LocalizationControlPropertyId"
+							],
+							"variable": [
+								{
+									"key": "LocalizationControlPropertyId",
+									"value": "{{LocalizationControlPropertyId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LocalizationControlProperty by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LocalizationControlProperty by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlProperty/:LocalizationControlPropertyId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlProperty",
+								":LocalizationControlPropertyId"
+							],
+							"variable": [
+								{
+									"key": "LocalizationControlPropertyId",
+									"value": "{{LocalizationControlPropertyId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LocalizationControlProperty by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LocalizationControlProperty for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlProperty/:LocalizationControlPropertyId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlProperty",
+								":LocalizationControlPropertyId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LocalizationControlPropertyId",
+									"value": "{{LocalizationControlPropertyId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LocalizationControlProperty for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LocalizationControlProperty",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LocalizationControlProperty",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LocalizationControlProperty"
+							]
+						},
+						"description": "Returns metadata information that describes a LocalizationControlProperty object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LocalizationControlProperty"
+		},
+		{
+			"name": "LocalizationControlType",
+			"item": [
+				{
+					"name": "Returns a list of LocalizationControlType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlType?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlType"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LocalizationControlType"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LocalizationControlType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationControlType to be Created"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlType"
+							]
+						},
+						"description": "Creates an instance of LocalizationControlType"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LocalizationControlType entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationControlType object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlType/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlType",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LocalizationControlType"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LocalizationControlType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationControlType to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlType/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlType",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LocalizationControlType"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LocalizationControlType by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlType/:LocalizationControlTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlType",
+								":LocalizationControlTypeId"
+							],
+							"variable": [
+								{
+									"key": "LocalizationControlTypeId",
+									"value": "{{LocalizationControlTypeId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LocalizationControlType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LocalizationControlType by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationControlType to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlType/:LocalizationControlTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlType",
+								":LocalizationControlTypeId"
+							],
+							"variable": [
+								{
+									"key": "LocalizationControlTypeId",
+									"value": "{{LocalizationControlTypeId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LocalizationControlType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LocalizationControlType by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlType/:LocalizationControlTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlType",
+								":LocalizationControlTypeId"
+							],
+							"variable": [
+								{
+									"key": "LocalizationControlTypeId",
+									"value": "{{LocalizationControlTypeId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LocalizationControlType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LocalizationControlType for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationControlType/:LocalizationControlTypeId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationControlType",
+								":LocalizationControlTypeId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LocalizationControlTypeId",
+									"value": "{{LocalizationControlTypeId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LocalizationControlType for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LocalizationControlType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LocalizationControlType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LocalizationControlType"
+							]
+						},
+						"description": "Returns metadata information that describes a LocalizationControlType object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LocalizationControlType"
+		},
+		{
+			"name": "LocalizationCulture",
+			"item": [
+				{
+					"name": "Returns a list of LocalizationCulture",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationCulture?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationCulture"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LocalizationCulture"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LocalizationCulture entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationCulture object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationCulture/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationCulture",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LocalizationCulture"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LocalizationCulture",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationCulture to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationCulture/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationCulture",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LocalizationCulture"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LocalizationCulture by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationCulture/:LocalizationCultureId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationCulture",
+								":LocalizationCultureId"
+							],
+							"variable": [
+								{
+									"key": "LocalizationCultureId",
+									"value": "{{LocalizationCultureId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LocalizationCulture by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LocalizationCulture by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationCulture to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationCulture/:LocalizationCultureId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationCulture",
+								":LocalizationCultureId"
+							],
+							"variable": [
+								{
+									"key": "LocalizationCultureId",
+									"value": "{{LocalizationCultureId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LocalizationCulture by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LocalizationCulture for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationCulture/:LocalizationCultureId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationCulture",
+								":LocalizationCultureId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LocalizationCultureId",
+									"value": "{{LocalizationCultureId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LocalizationCulture for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LocalizationCulture",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LocalizationCulture",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LocalizationCulture"
+							]
+						},
+						"description": "Returns metadata information that describes a LocalizationCulture object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LocalizationCulture"
+		},
+		{
+			"name": "LocalizationPhrase",
+			"item": [
+				{
+					"name": "Returns a list of LocalizationPhrase",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationPhrase?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationPhrase"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LocalizationPhrase"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LocalizationPhrase",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationPhrase to be Created"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationPhrase",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationPhrase"
+							]
+						},
+						"description": "Creates an instance of LocalizationPhrase"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LocalizationPhrase entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationPhrase object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationPhrase/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationPhrase",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LocalizationPhrase"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LocalizationPhrase",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationPhrase to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationPhrase/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationPhrase",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LocalizationPhrase"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LocalizationPhrase by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationPhrase/:LocalizationPhraseId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationPhrase",
+								":LocalizationPhraseId"
+							],
+							"variable": [
+								{
+									"key": "LocalizationPhraseId",
+									"value": "{{LocalizationPhraseId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LocalizationPhrase by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LocalizationPhrase by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LocalizationPhrase to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationPhrase/:LocalizationPhraseId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationPhrase",
+								":LocalizationPhraseId"
+							],
+							"variable": [
+								{
+									"key": "LocalizationPhraseId",
+									"value": "{{LocalizationPhraseId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LocalizationPhrase by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LocalizationPhrase by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationPhrase/:LocalizationPhraseId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationPhrase",
+								":LocalizationPhraseId"
+							],
+							"variable": [
+								{
+									"key": "LocalizationPhraseId",
+									"value": "{{LocalizationPhraseId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LocalizationPhrase by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LocalizationPhrase for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LocalizationPhrase/:LocalizationPhraseId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LocalizationPhrase",
+								":LocalizationPhraseId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LocalizationPhraseId",
+									"value": "{{LocalizationPhraseId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LocalizationPhrase for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LocalizationPhrase",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LocalizationPhrase",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LocalizationPhrase"
+							]
+						},
+						"description": "Returns metadata information that describes a LocalizationPhrase object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LocalizationPhrase"
+		},
+		{
+			"name": "LogMessage",
+			"item": [
+				{
+					"name": "Checks permissions for a LogMessage entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "LogMessage object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LogMessage/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LogMessage",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LogMessage"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LogMessage for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LogMessage/:LogMessageId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LogMessage",
+								":LogMessageId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LogMessageId",
+									"value": "{{LogMessageId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LogMessage for the specified id"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LogMessage"
+		},
+		{
+			"name": "Note",
+			"item": [
+				{
+					"name": "Returns a list of Note",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Note?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Note"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of Note"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a Note entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "Note object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Note/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Note",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of Note"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a Note",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "Note to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Note/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Note",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of Note"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a Note by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Note/:NoteId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Note",
+								":NoteId"
+							],
+							"variable": [
+								{
+									"key": "NoteId",
+									"value": "{{NoteId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of Note by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a Note for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Note/:NoteId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Note",
+								":NoteId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "NoteId",
+									"value": "{{NoteId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of Note for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for Note",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/Note",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"Note"
+							]
+						},
+						"description": "Returns metadata information that describes a Note object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for Note"
+		},
+		{
+			"name": "PanelDefinition",
+			"item": [
+				{
+					"name": "Returns a list of PanelDefinition",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PanelDefinition?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PanelDefinition"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PanelDefinition"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PanelDefinition entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "PanelDefinition object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PanelDefinition/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PanelDefinition",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PanelDefinition"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PanelDefinition",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "PanelDefinition to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PanelDefinition/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PanelDefinition",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PanelDefinition"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a PanelDefinition by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PanelDefinition/:PanelDefinitionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PanelDefinition",
+								":PanelDefinitionId"
+							],
+							"variable": [
+								{
+									"key": "PanelDefinitionId",
+									"value": "{{PanelDefinitionId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of PanelDefinition by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a PanelDefinition by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PanelDefinition/:PanelDefinitionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PanelDefinition",
+								":PanelDefinitionId"
+							],
+							"variable": [
+								{
+									"key": "PanelDefinitionId",
+									"value": "{{PanelDefinitionId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of PanelDefinition by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PanelDefinition for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PanelDefinition/:PanelDefinitionId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PanelDefinition",
+								":PanelDefinitionId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PanelDefinitionId",
+									"value": "{{PanelDefinitionId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PanelDefinition for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PanelDefinition",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PanelDefinition",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PanelDefinition"
+							]
+						},
+						"description": "Returns metadata information that describes a PanelDefinition object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PanelDefinition"
+		},
+		{
+			"name": "PanelDefinitionSummary",
+			"item": [
+				{
+					"name": "Returns a list of PanelDefinitionSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PanelDefinitionSummary?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PanelDefinitionSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PanelDefinitionSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PanelDefinitionSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "PanelDefinitionSummary object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PanelDefinitionSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PanelDefinitionSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PanelDefinitionSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PanelDefinitionSummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "PanelDefinitionSummary to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PanelDefinitionSummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PanelDefinitionSummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PanelDefinitionSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PanelDefinitionSummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PanelDefinitionSummary/:PanelDefinitionSummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PanelDefinitionSummary",
+								":PanelDefinitionSummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PanelDefinitionSummaryId",
+									"value": "{{PanelDefinitionSummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PanelDefinitionSummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PanelDefinitionSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PanelDefinitionSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PanelDefinitionSummary"
+							]
+						},
+						"description": "Returns metadata information that describes a PanelDefinitionSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PanelDefinitionSummary"
+		},
+		{
+			"name": "PartyDeleteLog",
+			"item": [
+				{
+					"name": "Returns a list of PartyDeleteLog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PartyDeleteLog?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyDeleteLog"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PartyDeleteLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a PartyDeleteLog",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "PartyDeleteLog to be Created"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyDeleteLog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyDeleteLog"
+							]
+						},
+						"description": "Creates an instance of PartyDeleteLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "GenericEntityRequest payload is needed and the properites are specific to the operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyDeleteLog/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyDeleteLog",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of PartyDeleteLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PartyDeleteLog entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "PartyDeleteLog object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyDeleteLog/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyDeleteLog",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PartyDeleteLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PartyDeleteLog",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "PartyDeleteLog to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyDeleteLog/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyDeleteLog",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PartyDeleteLog"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a PartyDeleteLog by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PartyDeleteLog/:PartyDeleteLogId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyDeleteLog",
+								":PartyDeleteLogId"
+							],
+							"variable": [
+								{
+									"key": "PartyDeleteLogId",
+									"value": "{{PartyDeleteLogId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of PartyDeleteLog by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a PartyDeleteLog by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "PartyDeleteLog to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PartyDeleteLog/:PartyDeleteLogId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyDeleteLog",
+								":PartyDeleteLogId"
+							],
+							"variable": [
+								{
+									"key": "PartyDeleteLogId",
+									"value": "{{PartyDeleteLogId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of PartyDeleteLog by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PartyDeleteLog for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PartyDeleteLog/:PartyDeleteLogId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PartyDeleteLog",
+								":PartyDeleteLogId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PartyDeleteLogId",
+									"value": "{{PartyDeleteLogId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PartyDeleteLog for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PartyDeleteLog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PartyDeleteLog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PartyDeleteLog"
+							]
+						},
+						"description": "Returns metadata information that describes a PartyDeleteLog object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PartyDeleteLog"
+		},
+		{
+			"name": "QueryDefinition",
+			"item": [
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "GenericEntityRequest payload is needed and the properites are specific to the operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/QueryDefinition/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"QueryDefinition",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of QueryDefinition"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a QueryDefinition entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "QueryDefinition object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/QueryDefinition/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"QueryDefinition",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of QueryDefinition"
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for QueryDefinition"
+		},
+		{
+			"name": "RedirectRule",
+			"item": [
+				{
+					"name": "Returns a list of RedirectRule",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/RedirectRule?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"RedirectRule"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of RedirectRule"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a RedirectRule",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "RedirectRule to be Created"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/RedirectRule",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"RedirectRule"
+							]
+						},
+						"description": "Creates an instance of RedirectRule"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a RedirectRule entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "RedirectRule object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/RedirectRule/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"RedirectRule",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of RedirectRule"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a RedirectRule",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "RedirectRule to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/RedirectRule/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"RedirectRule",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of RedirectRule"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a RedirectRule by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/RedirectRule/:RedirectRuleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"RedirectRule",
+								":RedirectRuleId"
+							],
+							"variable": [
+								{
+									"key": "RedirectRuleId",
+									"value": "{{RedirectRuleId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of RedirectRule by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a RedirectRule by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "RedirectRule to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/RedirectRule/:RedirectRuleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"RedirectRule",
+								":RedirectRuleId"
+							],
+							"variable": [
+								{
+									"key": "RedirectRuleId",
+									"value": "{{RedirectRuleId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of RedirectRule by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a RedirectRule by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/RedirectRule/:RedirectRuleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"RedirectRule",
+								":RedirectRuleId"
+							],
+							"variable": [
+								{
+									"key": "RedirectRuleId",
+									"value": "{{RedirectRuleId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of RedirectRule by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a RedirectRule for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/RedirectRule/:RedirectRuleId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"RedirectRule",
+								":RedirectRuleId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "RedirectRuleId",
+									"value": "{{RedirectRuleId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of RedirectRule for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for RedirectRule",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/RedirectRule",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"RedirectRule"
+							]
+						},
+						"description": "Returns metadata information that describes a RedirectRule object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for RedirectRule"
+		},
+		{
+			"name": "Tag",
+			"item": [
+				{
+					"name": "Returns a list of Tag",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Tag?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Tag"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of Tag"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a Tag entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "Tag object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Tag/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Tag",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of Tag"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a Tag by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Tag/:TagId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Tag",
+								":TagId"
+							],
+							"variable": [
+								{
+									"key": "TagId",
+									"value": "{{TagId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of Tag by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a Tag for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Tag/:TagId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Tag",
+								":TagId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "TagId",
+									"value": "{{TagId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of Tag for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for Tag",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/Tag",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"Tag"
+							]
+						},
+						"description": "Returns metadata information that describes a Tag object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for Tag"
+		},
+		{
+			"name": "Themes",
+			"item": [
+				{
+					"name": "Returns a list of Themes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Themes?limit=1",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Themes"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of Themes"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a Themes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "Themes to be Created"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Themes",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Themes"
+							]
+						},
+						"description": "Creates an instance of Themes"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a Themes entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "Themes object to check if the current user has permission to execute the specified operation"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Themes/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Themes",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of Themes"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a Themes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "Themes to be Validated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Themes/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Themes",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of Themes"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a Themes by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Themes/:ThemesId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Themes",
+								":ThemesId"
+							],
+							"variable": [
+								{
+									"key": "ThemesId",
+									"value": "{{ThemesId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of Themes by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a Themes by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "Themes to be Updated"
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Themes/:ThemesId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Themes",
+								":ThemesId"
+							],
+							"variable": [
+								{
+									"key": "ThemesId",
+									"value": "{{ThemesId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of Themes by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a Themes by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Themes/:ThemesId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Themes",
+								":ThemesId"
+							],
+							"variable": [
+								{
+									"key": "ThemesId",
+									"value": "{{ThemesId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of Themes by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a Themes for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Themes/:ThemesId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Themes",
+								":ThemesId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ThemesId",
+									"value": "{{ThemesId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of Themes for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for Themes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/Themes",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"Themes"
+							]
+						},
+						"description": "Returns metadata information that describes a Themes object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for Themes"
+		}
+	]
+}

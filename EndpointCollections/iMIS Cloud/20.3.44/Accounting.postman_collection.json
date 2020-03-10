@@ -1,0 +1,5062 @@
+{
+	"info": {
+		"_postman_id": "a09d191d-f36f-42c3-81ac-5023a8644e49",
+		"name": "Accounting",
+		"description": "iMIS Accounting API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BatchSummary",
+			"item": [
+				{
+					"name": "Returns a list of BatchSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BatchSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BatchSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of BatchSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a BatchSummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BatchSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BatchSummary"
+							]
+						},
+						"description": "Creates an instance of BatchSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BatchSummary/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BatchSummary",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of BatchSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a BatchSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BatchSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BatchSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of BatchSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a BatchSummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BatchSummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BatchSummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of BatchSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a BatchSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BatchSummary/:BatchSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BatchSummary",
+								":BatchSummaryId"
+							],
+							"variable": [
+								{
+									"key": "BatchSummaryId",
+									"value": "{{BatchSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of BatchSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a BatchSummary by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BatchSummary/:BatchSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BatchSummary",
+								":BatchSummaryId"
+							],
+							"variable": [
+								{
+									"key": "BatchSummaryId",
+									"value": "{{BatchSummaryId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of BatchSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a BatchSummary by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/BatchSummary/:BatchSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BatchSummary",
+								":BatchSummaryId"
+							],
+							"variable": [
+								{
+									"key": "BatchSummaryId",
+									"value": "{{BatchSummaryId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of BatchSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a BatchSummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/BatchSummary/:BatchSummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"BatchSummary",
+								":BatchSummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "BatchSummaryId",
+									"value": "{{BatchSummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of BatchSummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for BatchSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/BatchSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"BatchSummary"
+							]
+						},
+						"description": "Returns metadata information that describes a BatchSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for BatchSummary"
+		},
+		{
+			"name": "CreditInvoiceExport",
+			"item": [
+				{
+					"name": "Returns a list of CreditInvoiceExport",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CreditInvoiceExport",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CreditInvoiceExport"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of CreditInvoiceExport"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a CreditInvoiceExport entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CreditInvoiceExport/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CreditInvoiceExport",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of CreditInvoiceExport"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a CreditInvoiceExport for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CreditInvoiceExport/:CreditInvoiceExportId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CreditInvoiceExport",
+								":CreditInvoiceExportId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "CreditInvoiceExportId",
+									"value": "{{CreditInvoiceExportId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of CreditInvoiceExport for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for CreditInvoiceExport",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/CreditInvoiceExport",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"CreditInvoiceExport"
+							]
+						},
+						"description": "Returns metadata information that describes a CreditInvoiceExport object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for CreditInvoiceExport"
+		},
+		{
+			"name": "CreditInvoiceExportItem",
+			"item": [
+				{
+					"name": "Returns a list of CreditInvoiceExportItem",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CreditInvoiceExportItem",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CreditInvoiceExportItem"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of CreditInvoiceExportItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a CreditInvoiceExportItem entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/CreditInvoiceExportItem/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CreditInvoiceExportItem",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of CreditInvoiceExportItem"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a CreditInvoiceExportItem for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/CreditInvoiceExportItem/:CreditInvoiceExportItemId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"CreditInvoiceExportItem",
+								":CreditInvoiceExportItemId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "CreditInvoiceExportItemId",
+									"value": "{{CreditInvoiceExportItemId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of CreditInvoiceExportItem for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for CreditInvoiceExportItem",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/CreditInvoiceExportItem",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"CreditInvoiceExportItem"
+							]
+						},
+						"description": "Returns metadata information that describes a CreditInvoiceExportItem object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for CreditInvoiceExportItem"
+		},
+		{
+			"name": "DeferralMatrix",
+			"item": [
+				{
+					"name": "Returns a list of DeferralMatrix",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DeferralMatrix",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeferralMatrix"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of DeferralMatrix"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DeferralMatrix/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeferralMatrix",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of DeferralMatrix"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a DeferralMatrix entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DeferralMatrix/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeferralMatrix",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of DeferralMatrix"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a DeferralMatrix",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DeferralMatrix/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeferralMatrix",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of DeferralMatrix"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a DeferralMatrix for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DeferralMatrix/:DeferralMatrixId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeferralMatrix",
+								":DeferralMatrixId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "DeferralMatrixId",
+									"value": "{{DeferralMatrixId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of DeferralMatrix for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for DeferralMatrix",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/DeferralMatrix",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"DeferralMatrix"
+							]
+						},
+						"description": "Returns metadata information that describes a DeferralMatrix object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for DeferralMatrix"
+		},
+		{
+			"name": "GLAccount",
+			"item": [
+				{
+					"name": "Returns a list of GLAccount",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GLAccount",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GLAccount"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of GLAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a GLAccount entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GLAccount/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GLAccount",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of GLAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a GLAccount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GLAccount/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GLAccount",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of GLAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a GLAccount by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GLAccount/:GLAccountId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GLAccount",
+								":GLAccountId"
+							],
+							"variable": [
+								{
+									"key": "GLAccountId",
+									"value": "{{GLAccountId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of GLAccount by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a GLAccount for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GLAccount/:GLAccountId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GLAccount",
+								":GLAccountId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "GLAccountId",
+									"value": "{{GLAccountId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of GLAccount for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for GLAccount",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/GLAccount",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"GLAccount"
+							]
+						},
+						"description": "Returns metadata information that describes a GLAccount object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for GLAccount"
+		},
+		{
+			"name": "GLExport",
+			"item": [
+				{
+					"name": "Returns a list of GLExport",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GLExport",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GLExport"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of GLExport"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes a GLExport operation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GLExport/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GLExport",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of GLExport"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a GLExport entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GLExport/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GLExport",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of GLExport"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a GLExport",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/GLExport/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GLExport",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of GLExport"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a GLExport for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/GLExport/:GLExportId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"GLExport",
+								":GLExportId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "GLExportId",
+									"value": "{{GLExportId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of GLExport for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for GLExport",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/GLExport",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"GLExport"
+							]
+						},
+						"description": "Returns metadata information that describes a GLExport object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for GLExport"
+		},
+		{
+			"name": "LegacyDueToDueFrom",
+			"item": [
+				{
+					"name": "Returns a list of LegacyDueToDueFrom",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyDueToDueFrom",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyDueToDueFrom"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyDueToDueFrom"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LegacyDueToDueFrom",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyDueToDueFrom",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyDueToDueFrom"
+							]
+						},
+						"description": "Creates an instance of LegacyDueToDueFrom"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyDueToDueFrom entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyDueToDueFrom/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyDueToDueFrom",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyDueToDueFrom"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LegacyDueToDueFrom",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyDueToDueFrom/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyDueToDueFrom",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LegacyDueToDueFrom"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LegacyDueToDueFrom by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyDueToDueFrom/:LegacyDueToDueFromId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyDueToDueFrom",
+								":LegacyDueToDueFromId"
+							],
+							"variable": [
+								{
+									"key": "LegacyDueToDueFromId",
+									"value": "{{LegacyDueToDueFromId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LegacyDueToDueFrom by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyDueToDueFrom by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyDueToDueFrom/:LegacyDueToDueFromId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyDueToDueFrom",
+								":LegacyDueToDueFromId"
+							],
+							"variable": [
+								{
+									"key": "LegacyDueToDueFromId",
+									"value": "{{LegacyDueToDueFromId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyDueToDueFrom by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LegacyDueToDueFrom by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyDueToDueFrom/:LegacyDueToDueFromId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyDueToDueFrom",
+								":LegacyDueToDueFromId"
+							],
+							"variable": [
+								{
+									"key": "LegacyDueToDueFromId",
+									"value": "{{LegacyDueToDueFromId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LegacyDueToDueFrom by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyDueToDueFrom for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyDueToDueFrom/:LegacyDueToDueFromId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyDueToDueFrom",
+								":LegacyDueToDueFromId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyDueToDueFromId",
+									"value": "{{LegacyDueToDueFromId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyDueToDueFrom for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyDueToDueFrom",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyDueToDueFrom",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyDueToDueFrom"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyDueToDueFrom object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyDueToDueFrom"
+		},
+		{
+			"name": "LegacyVatRule",
+			"item": [
+				{
+					"name": "Returns a list of LegacyVatRule",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRule",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRule"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyVatRule"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LegacyVatRule",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRule",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRule"
+							]
+						},
+						"description": "Creates an instance of LegacyVatRule"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyVatRule entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRule/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRule",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyVatRule"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LegacyVatRule",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRule/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRule",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LegacyVatRule"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LegacyVatRule by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRule/:LegacyVatRuleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRule",
+								":LegacyVatRuleId"
+							],
+							"variable": [
+								{
+									"key": "LegacyVatRuleId",
+									"value": "{{LegacyVatRuleId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LegacyVatRule by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyVatRule by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRule/:LegacyVatRuleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRule",
+								":LegacyVatRuleId"
+							],
+							"variable": [
+								{
+									"key": "LegacyVatRuleId",
+									"value": "{{LegacyVatRuleId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyVatRule by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LegacyVatRule by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRule/:LegacyVatRuleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRule",
+								":LegacyVatRuleId"
+							],
+							"variable": [
+								{
+									"key": "LegacyVatRuleId",
+									"value": "{{LegacyVatRuleId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LegacyVatRule by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyVatRule for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRule/:LegacyVatRuleId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRule",
+								":LegacyVatRuleId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyVatRuleId",
+									"value": "{{LegacyVatRuleId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyVatRule for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyVatRule",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyVatRule",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyVatRule"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyVatRule object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyVatRule"
+		},
+		{
+			"name": "LegacyVatRuleSet",
+			"item": [
+				{
+					"name": "Returns a list of LegacyVatRuleSet",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRuleSet",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRuleSet"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyVatRuleSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LegacyVatRuleSet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRuleSet",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRuleSet"
+							]
+						},
+						"description": "Creates an instance of LegacyVatRuleSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyVatRuleSet entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRuleSet/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRuleSet",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyVatRuleSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LegacyVatRuleSet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRuleSet/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRuleSet",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LegacyVatRuleSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LegacyVatRuleSet by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRuleSet/:LegacyVatRuleSetId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRuleSet",
+								":LegacyVatRuleSetId"
+							],
+							"variable": [
+								{
+									"key": "LegacyVatRuleSetId",
+									"value": "{{LegacyVatRuleSetId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LegacyVatRuleSet by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyVatRuleSet by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRuleSet/:LegacyVatRuleSetId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRuleSet",
+								":LegacyVatRuleSetId"
+							],
+							"variable": [
+								{
+									"key": "LegacyVatRuleSetId",
+									"value": "{{LegacyVatRuleSetId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyVatRuleSet by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LegacyVatRuleSet by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRuleSet/:LegacyVatRuleSetId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRuleSet",
+								":LegacyVatRuleSetId"
+							],
+							"variable": [
+								{
+									"key": "LegacyVatRuleSetId",
+									"value": "{{LegacyVatRuleSetId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LegacyVatRuleSet by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyVatRuleSet for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyVatRuleSet/:LegacyVatRuleSetId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyVatRuleSet",
+								":LegacyVatRuleSetId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyVatRuleSetId",
+									"value": "{{LegacyVatRuleSetId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyVatRuleSet for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyVatRuleSet",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyVatRuleSet",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyVatRuleSet"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyVatRuleSet object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyVatRuleSet"
+		},
+		{
+			"name": "PriceSheet",
+			"item": [
+				{
+					"name": "Returns a list of PriceSheet",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PriceSheet",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PriceSheet"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PriceSheet"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PriceSheet entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PriceSheet/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PriceSheet",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PriceSheet"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PriceSheet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PriceSheet/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PriceSheet",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PriceSheet"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PriceSheet for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PriceSheet/:PriceSheetId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PriceSheet",
+								":PriceSheetId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PriceSheetId",
+									"value": "{{PriceSheetId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PriceSheet for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PriceSheet",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PriceSheet",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PriceSheet"
+							]
+						},
+						"description": "Returns metadata information that describes a PriceSheet object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PriceSheet"
+		},
+		{
+			"name": "PriceSheetSummary",
+			"item": [
+				{
+					"name": "Returns a list of PriceSheetSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PriceSheetSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PriceSheetSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of PriceSheetSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a PriceSheetSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PriceSheetSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PriceSheetSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of PriceSheetSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a PriceSheetSummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PriceSheetSummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PriceSheetSummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of PriceSheetSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a PriceSheetSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PriceSheetSummary/:PriceSheetSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PriceSheetSummary",
+								":PriceSheetSummaryId"
+							],
+							"variable": [
+								{
+									"key": "PriceSheetSummaryId",
+									"value": "{{PriceSheetSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of PriceSheetSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a PriceSheetSummary by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/PriceSheetSummary/:PriceSheetSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PriceSheetSummary",
+								":PriceSheetSummaryId"
+							],
+							"variable": [
+								{
+									"key": "PriceSheetSummaryId",
+									"value": "{{PriceSheetSummaryId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of PriceSheetSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a PriceSheetSummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/PriceSheetSummary/:PriceSheetSummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"PriceSheetSummary",
+								":PriceSheetSummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PriceSheetSummaryId",
+									"value": "{{PriceSheetSummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of PriceSheetSummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for PriceSheetSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/PriceSheetSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"PriceSheetSummary"
+							]
+						},
+						"description": "Returns metadata information that describes a PriceSheetSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for PriceSheetSummary"
+		},
+		{
+			"name": "TaxAuthority",
+			"item": [
+				{
+					"name": "Returns a list of TaxAuthority",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthority",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthority"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of TaxAuthority"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a TaxAuthority",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthority",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthority"
+							]
+						},
+						"description": "Creates an instance of TaxAuthority"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a TaxAuthority entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthority/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthority",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of TaxAuthority"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a TaxAuthority",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthority/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthority",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of TaxAuthority"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a TaxAuthority by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthority/:TaxAuthorityId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthority",
+								":TaxAuthorityId"
+							],
+							"variable": [
+								{
+									"key": "TaxAuthorityId",
+									"value": "{{TaxAuthorityId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of TaxAuthority by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a TaxAuthority by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthority/:TaxAuthorityId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthority",
+								":TaxAuthorityId"
+							],
+							"variable": [
+								{
+									"key": "TaxAuthorityId",
+									"value": "{{TaxAuthorityId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of TaxAuthority by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a TaxAuthority by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthority/:TaxAuthorityId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthority",
+								":TaxAuthorityId"
+							],
+							"variable": [
+								{
+									"key": "TaxAuthorityId",
+									"value": "{{TaxAuthorityId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of TaxAuthority by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a TaxAuthority for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthority/:TaxAuthorityId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthority",
+								":TaxAuthorityId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "TaxAuthorityId",
+									"value": "{{TaxAuthorityId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of TaxAuthority for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for TaxAuthority",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/TaxAuthority",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"TaxAuthority"
+							]
+						},
+						"description": "Returns metadata information that describes a TaxAuthority object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for TaxAuthority"
+		},
+		{
+			"name": "TaxAuthoritySummary",
+			"item": [
+				{
+					"name": "Returns a list of TaxAuthoritySummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthoritySummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthoritySummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of TaxAuthoritySummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a TaxAuthoritySummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthoritySummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthoritySummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of TaxAuthoritySummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a TaxAuthoritySummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthoritySummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthoritySummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of TaxAuthoritySummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a TaxAuthoritySummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthoritySummary/:TaxAuthoritySummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthoritySummary",
+								":TaxAuthoritySummaryId"
+							],
+							"variable": [
+								{
+									"key": "TaxAuthoritySummaryId",
+									"value": "{{TaxAuthoritySummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of TaxAuthoritySummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a TaxAuthoritySummary by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthoritySummary/:TaxAuthoritySummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthoritySummary",
+								":TaxAuthoritySummaryId"
+							],
+							"variable": [
+								{
+									"key": "TaxAuthoritySummaryId",
+									"value": "{{TaxAuthoritySummaryId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of TaxAuthoritySummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a TaxAuthoritySummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxAuthoritySummary/:TaxAuthoritySummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxAuthoritySummary",
+								":TaxAuthoritySummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "TaxAuthoritySummaryId",
+									"value": "{{TaxAuthoritySummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of TaxAuthoritySummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for TaxAuthoritySummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/TaxAuthoritySummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"TaxAuthoritySummary"
+							]
+						},
+						"description": "Returns metadata information that describes a TaxAuthoritySummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for TaxAuthoritySummary"
+		},
+		{
+			"name": "TaxCategory",
+			"item": [
+				{
+					"name": "Returns a list of TaxCategory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxCategory",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxCategory"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of TaxCategory"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a TaxCategory entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxCategory/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxCategory",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of TaxCategory"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a TaxCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxCategory/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxCategory",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of TaxCategory"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a TaxCategory for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxCategory/:TaxCategoryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxCategory",
+								":TaxCategoryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "TaxCategoryId",
+									"value": "{{TaxCategoryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of TaxCategory for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for TaxCategory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/TaxCategory",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"TaxCategory"
+							]
+						},
+						"description": "Returns metadata information that describes a TaxCategory object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for TaxCategory"
+		},
+		{
+			"name": "TaxCategorySummary",
+			"item": [
+				{
+					"name": "Returns a list of TaxCategorySummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxCategorySummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxCategorySummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of TaxCategorySummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a TaxCategorySummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxCategorySummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxCategorySummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of TaxCategorySummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a TaxCategorySummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxCategorySummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxCategorySummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of TaxCategorySummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a TaxCategorySummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxCategorySummary/:TaxCategorySummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxCategorySummary",
+								":TaxCategorySummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "TaxCategorySummaryId",
+									"value": "{{TaxCategorySummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of TaxCategorySummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for TaxCategorySummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/TaxCategorySummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"TaxCategorySummary"
+							]
+						},
+						"description": "Returns metadata information that describes a TaxCategorySummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for TaxCategorySummary"
+		},
+		{
+			"name": "TaxSchedule",
+			"item": [
+				{
+					"name": "Returns a list of TaxSchedule",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxSchedule",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxSchedule"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of TaxSchedule"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a TaxSchedule entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxSchedule/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxSchedule",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of TaxSchedule"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a TaxSchedule",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxSchedule/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxSchedule",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of TaxSchedule"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a TaxSchedule by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxSchedule/:TaxScheduleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxSchedule",
+								":TaxScheduleId"
+							],
+							"variable": [
+								{
+									"key": "TaxScheduleId",
+									"value": "{{TaxScheduleId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of TaxSchedule by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a TaxSchedule by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxSchedule/:TaxScheduleId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxSchedule",
+								":TaxScheduleId"
+							],
+							"variable": [
+								{
+									"key": "TaxScheduleId",
+									"value": "{{TaxScheduleId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of TaxSchedule by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a TaxSchedule for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxSchedule/:TaxScheduleId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxSchedule",
+								":TaxScheduleId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "TaxScheduleId",
+									"value": "{{TaxScheduleId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of TaxSchedule for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for TaxSchedule",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/TaxSchedule",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"TaxSchedule"
+							]
+						},
+						"description": "Returns metadata information that describes a TaxSchedule object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for TaxSchedule"
+		},
+		{
+			"name": "TaxScheduleSummary",
+			"item": [
+				{
+					"name": "Returns a list of TaxScheduleSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxScheduleSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxScheduleSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of TaxScheduleSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a TaxScheduleSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxScheduleSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxScheduleSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of TaxScheduleSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a TaxScheduleSummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxScheduleSummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxScheduleSummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of TaxScheduleSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a TaxScheduleSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxScheduleSummary/:TaxScheduleSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxScheduleSummary",
+								":TaxScheduleSummaryId"
+							],
+							"variable": [
+								{
+									"key": "TaxScheduleSummaryId",
+									"value": "{{TaxScheduleSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of TaxScheduleSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a TaxScheduleSummary by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/TaxScheduleSummary/:TaxScheduleSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxScheduleSummary",
+								":TaxScheduleSummaryId"
+							],
+							"variable": [
+								{
+									"key": "TaxScheduleSummaryId",
+									"value": "{{TaxScheduleSummaryId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of TaxScheduleSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a TaxScheduleSummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/TaxScheduleSummary/:TaxScheduleSummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"TaxScheduleSummary",
+								":TaxScheduleSummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "TaxScheduleSummaryId",
+									"value": "{{TaxScheduleSummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of TaxScheduleSummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for TaxScheduleSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/TaxScheduleSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"TaxScheduleSummary"
+							]
+						},
+						"description": "Returns metadata information that describes a TaxScheduleSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for TaxScheduleSummary"
+		}
+	]
+}

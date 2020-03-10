@@ -1,0 +1,3319 @@
+{
+	"info": {
+		"_postman_id": "3c640328-975a-40fe-b944-4817ca5f9907",
+		"name": "Commerce System Setup",
+		"description": "iMIS Commerce System Setup API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ChapterZipCode",
+			"item": [
+				{
+					"name": "Returns a list of ChapterZipCode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ChapterZipCode",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ChapterZipCode"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of ChapterZipCode"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a ChapterZipCode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ChapterZipCode",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ChapterZipCode"
+							]
+						},
+						"description": "Creates an instance of ChapterZipCode"
+					},
+					"response": []
+				},
+				{
+					"name": "Executes  a GenericExecuteRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ChapterZipCode/_execute",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ChapterZipCode",
+								"_execute"
+							]
+						},
+						"description": "Executes an operation of ChapterZipCode"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a ChapterZipCode entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ChapterZipCode/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ChapterZipCode",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of ChapterZipCode"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a ChapterZipCode",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ChapterZipCode/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ChapterZipCode",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of ChapterZipCode"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a ChapterZipCode by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ChapterZipCode/:ChapterZipCodeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ChapterZipCode",
+								":ChapterZipCodeId"
+							],
+							"variable": [
+								{
+									"key": "ChapterZipCodeId",
+									"value": "{{ChapterZipCodeId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of ChapterZipCode by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a ChapterZipCode by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/ChapterZipCode/:ChapterZipCodeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ChapterZipCode",
+								":ChapterZipCodeId"
+							],
+							"variable": [
+								{
+									"key": "ChapterZipCodeId",
+									"value": "{{ChapterZipCodeId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of ChapterZipCode by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a ChapterZipCode for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/ChapterZipCode/:ChapterZipCodeId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"ChapterZipCode",
+								":ChapterZipCodeId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "ChapterZipCodeId",
+									"value": "{{ChapterZipCodeId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of ChapterZipCode for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for ChapterZipCode",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/ChapterZipCode",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"ChapterZipCode"
+							]
+						},
+						"description": "Returns metadata information that describes a ChapterZipCode object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for ChapterZipCode"
+		},
+		{
+			"name": "DeliveryMethod",
+			"item": [
+				{
+					"name": "Returns a list of DeliveryMethod",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DeliveryMethod",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeliveryMethod"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of DeliveryMethod"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a DeliveryMethod entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DeliveryMethod/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeliveryMethod",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of DeliveryMethod"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a DeliveryMethod",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DeliveryMethod/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeliveryMethod",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of DeliveryMethod"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a DeliveryMethod by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DeliveryMethod/:DeliveryMethodId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeliveryMethod",
+								":DeliveryMethodId"
+							],
+							"variable": [
+								{
+									"key": "DeliveryMethodId",
+									"value": "{{DeliveryMethodId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of DeliveryMethod by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a DeliveryMethod by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DeliveryMethod/:DeliveryMethodId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeliveryMethod",
+								":DeliveryMethodId"
+							],
+							"variable": [
+								{
+									"key": "DeliveryMethodId",
+									"value": "{{DeliveryMethodId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of DeliveryMethod by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a DeliveryMethod for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DeliveryMethod/:DeliveryMethodId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeliveryMethod",
+								":DeliveryMethodId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "DeliveryMethodId",
+									"value": "{{DeliveryMethodId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of DeliveryMethod for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for DeliveryMethod",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/DeliveryMethod",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"DeliveryMethod"
+							]
+						},
+						"description": "Returns metadata information that describes a DeliveryMethod object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for DeliveryMethod"
+		},
+		{
+			"name": "DeliveryMethodSet",
+			"item": [
+				{
+					"name": "Returns a list of DeliveryMethodSet",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DeliveryMethodSet",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeliveryMethodSet"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of DeliveryMethodSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a DeliveryMethodSet entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DeliveryMethodSet/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeliveryMethodSet",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of DeliveryMethodSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a DeliveryMethodSet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DeliveryMethodSet/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeliveryMethodSet",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of DeliveryMethodSet"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a DeliveryMethodSet by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DeliveryMethodSet/:DeliveryMethodSetId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeliveryMethodSet",
+								":DeliveryMethodSetId"
+							],
+							"variable": [
+								{
+									"key": "DeliveryMethodSetId",
+									"value": "{{DeliveryMethodSetId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of DeliveryMethodSet by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a DeliveryMethodSet by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/DeliveryMethodSet/:DeliveryMethodSetId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeliveryMethodSet",
+								":DeliveryMethodSetId"
+							],
+							"variable": [
+								{
+									"key": "DeliveryMethodSetId",
+									"value": "{{DeliveryMethodSetId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of DeliveryMethodSet by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a DeliveryMethodSet for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/DeliveryMethodSet/:DeliveryMethodSetId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"DeliveryMethodSet",
+								":DeliveryMethodSetId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "DeliveryMethodSetId",
+									"value": "{{DeliveryMethodSetId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of DeliveryMethodSet for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for DeliveryMethodSet",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/DeliveryMethodSet",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"DeliveryMethodSet"
+							]
+						},
+						"description": "Returns metadata information that describes a DeliveryMethodSet object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for DeliveryMethodSet"
+		},
+		{
+			"name": "LegacyFreightRate",
+			"item": [
+				{
+					"name": "Returns a list of LegacyFreightRate",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightRate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightRate"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyFreightRate"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LegacyFreightRate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightRate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightRate"
+							]
+						},
+						"description": "Creates an instance of LegacyFreightRate"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyFreightRate entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightRate/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightRate",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyFreightRate"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LegacyFreightRate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightRate/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightRate",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LegacyFreightRate"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyFreightRate by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightRate/:LegacyFreightRateId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightRate",
+								":LegacyFreightRateId"
+							],
+							"variable": [
+								{
+									"key": "LegacyFreightRateId",
+									"value": "{{LegacyFreightRateId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyFreightRate by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LegacyFreightRate by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightRate/:LegacyFreightRateId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightRate",
+								":LegacyFreightRateId"
+							],
+							"variable": [
+								{
+									"key": "LegacyFreightRateId",
+									"value": "{{LegacyFreightRateId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LegacyFreightRate by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyFreightRate for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightRate/:LegacyFreightRateId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightRate",
+								":LegacyFreightRateId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyFreightRateId",
+									"value": "{{LegacyFreightRateId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyFreightRate for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyFreightRate",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyFreightRate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyFreightRate"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyFreightRate object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyFreightRate"
+		},
+		{
+			"name": "LegacyFreightZone",
+			"item": [
+				{
+					"name": "Returns a list of LegacyFreightZone",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightZone",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightZone"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyFreightZone"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a LegacyFreightZone",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightZone",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightZone"
+							]
+						},
+						"description": "Creates an instance of LegacyFreightZone"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyFreightZone entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightZone/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightZone",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyFreightZone"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a LegacyFreightZone",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightZone/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightZone",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of LegacyFreightZone"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LegacyFreightZone by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightZone/:LegacyFreightZoneId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightZone",
+								":LegacyFreightZoneId"
+							],
+							"variable": [
+								{
+									"key": "LegacyFreightZoneId",
+									"value": "{{LegacyFreightZoneId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LegacyFreightZone by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyFreightZone by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightZone/:LegacyFreightZoneId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightZone",
+								":LegacyFreightZoneId"
+							],
+							"variable": [
+								{
+									"key": "LegacyFreightZoneId",
+									"value": "{{LegacyFreightZoneId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyFreightZone by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LegacyFreightZone by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightZone/:LegacyFreightZoneId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightZone",
+								":LegacyFreightZoneId"
+							],
+							"variable": [
+								{
+									"key": "LegacyFreightZoneId",
+									"value": "{{LegacyFreightZoneId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LegacyFreightZone by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyFreightZone for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyFreightZone/:LegacyFreightZoneId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyFreightZone",
+								":LegacyFreightZoneId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyFreightZoneId",
+									"value": "{{LegacyFreightZoneId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyFreightZone for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyFreightZone",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyFreightZone",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyFreightZone"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyFreightZone object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyFreightZone"
+		},
+		{
+			"name": "LegacyOrderType",
+			"item": [
+				{
+					"name": "Returns a list of LegacyOrderType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyOrderType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyOrderType"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of LegacyOrderType"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a LegacyOrderType entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyOrderType/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyOrderType",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of LegacyOrderType"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a LegacyOrderType by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyOrderType/:LegacyOrderTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyOrderType",
+								":LegacyOrderTypeId"
+							],
+							"variable": [
+								{
+									"key": "LegacyOrderTypeId",
+									"value": "{{LegacyOrderTypeId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of LegacyOrderType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a LegacyOrderType by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyOrderType/:LegacyOrderTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyOrderType",
+								":LegacyOrderTypeId"
+							],
+							"variable": [
+								{
+									"key": "LegacyOrderTypeId",
+									"value": "{{LegacyOrderTypeId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of LegacyOrderType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a LegacyOrderType by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyOrderType/:LegacyOrderTypeId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyOrderType",
+								":LegacyOrderTypeId"
+							],
+							"variable": [
+								{
+									"key": "LegacyOrderTypeId",
+									"value": "{{LegacyOrderTypeId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of LegacyOrderType by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a LegacyOrderType for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/LegacyOrderType/:LegacyOrderTypeId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"LegacyOrderType",
+								":LegacyOrderTypeId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "LegacyOrderTypeId",
+									"value": "{{LegacyOrderTypeId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of LegacyOrderType for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for LegacyOrderType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/LegacyOrderType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"LegacyOrderType"
+							]
+						},
+						"description": "Returns metadata information that describes a LegacyOrderType object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for LegacyOrderType"
+		},
+		{
+			"name": "Promotion",
+			"item": [
+				{
+					"name": "Returns a list of Promotion",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Promotion",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Promotion"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of Promotion"
+					},
+					"response": []
+				},
+				{
+					"name": "Creates a Promotion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Promotion",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Promotion"
+							]
+						},
+						"description": "Creates an instance of Promotion"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a Promotion entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Promotion/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Promotion",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of Promotion"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a Promotion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Promotion/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Promotion",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of Promotion"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a Promotion by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Promotion/:PromotionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Promotion",
+								":PromotionId"
+							],
+							"variable": [
+								{
+									"key": "PromotionId",
+									"value": "{{PromotionId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of Promotion by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a Promotion by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Promotion/:PromotionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Promotion",
+								":PromotionId"
+							],
+							"variable": [
+								{
+									"key": "PromotionId",
+									"value": "{{PromotionId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of Promotion by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Removes a Promotion by id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/Promotion/:PromotionId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Promotion",
+								":PromotionId"
+							],
+							"variable": [
+								{
+									"key": "PromotionId",
+									"value": "{{PromotionId}}"
+								}
+							]
+						},
+						"description": "Removes an instance of Promotion by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a Promotion for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/Promotion/:PromotionId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"Promotion",
+								":PromotionId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "PromotionId",
+									"value": "{{PromotionId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of Promotion for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for Promotion",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/Promotion",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"Promotion"
+							]
+						},
+						"description": "Returns metadata information that describes a Promotion object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for Promotion"
+		},
+		{
+			"name": "SoftCreditType",
+			"item": [
+				{
+					"name": "Returns a list of SoftCreditType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/SoftCreditType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"SoftCreditType"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of SoftCreditType"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a SoftCreditType entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/SoftCreditType/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"SoftCreditType",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of SoftCreditType"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a SoftCreditType",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/SoftCreditType/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"SoftCreditType",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of SoftCreditType"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a SoftCreditType for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/SoftCreditType/:SoftCreditTypeId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"SoftCreditType",
+								":SoftCreditTypeId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "SoftCreditTypeId",
+									"value": "{{SoftCreditTypeId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of SoftCreditType for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for SoftCreditType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/SoftCreditType",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"SoftCreditType"
+							]
+						},
+						"description": "Returns metadata information that describes a SoftCreditType object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for SoftCreditType"
+		},
+		{
+			"name": "UomGroup",
+			"item": [
+				{
+					"name": "Returns a list of UomGroup",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/UomGroup",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"UomGroup"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of UomGroup"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for an UomGroup entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/UomGroup/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"UomGroup",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of UomGroup"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates an UomGroup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/UomGroup/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"UomGroup",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of UomGroup"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns an UomGroup by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/UomGroup/:UomGroupId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"UomGroup",
+								":UomGroupId"
+							],
+							"variable": [
+								{
+									"key": "UomGroupId",
+									"value": "{{UomGroupId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of UomGroup by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates an UomGroup by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/UomGroup/:UomGroupId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"UomGroup",
+								":UomGroupId"
+							],
+							"variable": [
+								{
+									"key": "UomGroupId",
+									"value": "{{UomGroupId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of UomGroup by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for an UomGroup for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/UomGroup/:UomGroupId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"UomGroup",
+								":UomGroupId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "UomGroupId",
+									"value": "{{UomGroupId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of UomGroup for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for UomGroup",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/UomGroup",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"UomGroup"
+							]
+						},
+						"description": "Returns metadata information that describes an UomGroup object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for UomGroup"
+		},
+		{
+			"name": "WarehouseSummary",
+			"item": [
+				{
+					"name": "Returns a list of WarehouseSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/WarehouseSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"WarehouseSummary"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Returns a list containing a collection of WarehouseSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Checks permissions for a WarehouseSummary entity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/WarehouseSummary/_haspermission/:operation",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"WarehouseSummary",
+								"_haspermission",
+								":operation"
+							],
+							"variable": [
+								{
+									"key": "operation",
+									"value": "{{operation}}"
+								}
+							]
+						},
+						"description": "Checks permissions for an instance of WarehouseSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Validates a WarehouseSummary",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/WarehouseSummary/_validate",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"WarehouseSummary",
+								"_validate"
+							]
+						},
+						"description": "Validates an instance of WarehouseSummary"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns a WarehouseSummary by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/WarehouseSummary/:WarehouseSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"WarehouseSummary",
+								":WarehouseSummaryId"
+							],
+							"variable": [
+								{
+									"key": "WarehouseSummaryId",
+									"value": "{{WarehouseSummaryId}}"
+								}
+							]
+						},
+						"description": "Returns an instance of WarehouseSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Updates a WarehouseSummary by id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{URL}}/api/WarehouseSummary/:WarehouseSummaryId",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"WarehouseSummary",
+								":WarehouseSummaryId"
+							],
+							"variable": [
+								{
+									"key": "WarehouseSummaryId",
+									"value": "{{WarehouseSummaryId}}"
+								}
+							]
+						},
+						"description": "Updates an instance of WarehouseSummary by id"
+					},
+					"response": []
+				},
+				{
+					"name": "Gets the changelog for a WarehouseSummary for the specified id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/WarehouseSummary/:WarehouseSummaryId/changelog",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"WarehouseSummary",
+								":WarehouseSummaryId",
+								"changelog"
+							],
+							"variable": [
+								{
+									"key": "WarehouseSummaryId",
+									"value": "{{WarehouseSummaryId}}"
+								}
+							]
+						},
+						"description": "Gets the changelog for an instance of WarehouseSummary for the specified id"
+					},
+					"response": []
+				},
+				{
+					"name": "Returns the metadata for WarehouseSummary",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Authorization}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{URL}}/api/metadata/WarehouseSummary",
+							"protocol": "https",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"metadata",
+								"WarehouseSummary"
+							]
+						},
+						"description": "Returns metadata information that describes a WarehouseSummary object."
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for WarehouseSummary"
+		}
+	]
+}
